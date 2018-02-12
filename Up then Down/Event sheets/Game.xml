@@ -199,6 +199,10 @@
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="660046590184533" type="playerAnimations">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>This spawns the platform.</comment>

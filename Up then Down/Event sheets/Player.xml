@@ -22,13 +22,13 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="661625086635664" type="player">
+                                <action behavior="Rotate" id="0" name="Set speed" sid="661625086635664" type="playerAnimations">
                                     <param id="0" name="Speed">360</param>
                                 </action>
-                                <action behavior="Rotate" id="1" name="Set acceleration" sid="558908921008778" type="player">
+                                <action behavior="Rotate" id="1" name="Set acceleration" sid="558908921008778" type="playerAnimations">
                                     <param id="0" name="Acceleration">360</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="609410226667290" type="player">
+                                <action id="4" name="Set animation" sid="609410226667290" type="playerAnimations">
                                     <param id="0" name="Animation">&quot;Jump&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -43,13 +43,13 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="967822941241586" type="player">
+                                <action behavior="Rotate" id="0" name="Set speed" sid="967822941241586" type="playerAnimations">
                                     <param id="0" name="Speed">-360</param>
                                 </action>
-                                <action behavior="Rotate" id="1" name="Set acceleration" sid="453904536370099" type="player">
+                                <action behavior="Rotate" id="1" name="Set acceleration" sid="453904536370099" type="playerAnimations">
                                     <param id="0" name="Acceleration">-360</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="818253210117884" type="player">
+                                <action id="4" name="Set animation" sid="818253210117884" type="playerAnimations">
                                     <param id="0" name="Animation">&quot;Jump&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -63,16 +63,16 @@
                         <condition behavior="Platform" id="9" name="On landed" sid="952090247794504" type="player" />
                     </conditions>
                     <actions>
-                        <action behavior="Rotate" id="0" name="Set speed" sid="803408756527009" type="player">
+                        <action behavior="Rotate" id="0" name="Set speed" sid="803408756527009" type="playerAnimations">
                             <param id="0" name="Speed">0</param>
                         </action>
-                        <action behavior="Rotate" id="1" name="Set acceleration" sid="477704792058361" type="player">
+                        <action behavior="Rotate" id="1" name="Set acceleration" sid="477704792058361" type="playerAnimations">
                             <param id="0" name="Acceleration">0</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="437689087093372" type="player">
+                        <action id="-8" name="Set angle" sid="437689087093372" type="playerAnimations">
                             <param id="0" name="Angle">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="903518562210805" type="player">
+                        <action id="4" name="Set animation" sid="903518562210805" type="playerAnimations">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
