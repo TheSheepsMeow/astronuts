@@ -325,7 +325,7 @@
         <object-type name="deathFromBelow" sid="660167968426208">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="moving" sid="414926922493778" type="number" />
+                <instance-variable name="moving" sid="414926922493778" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648039989994068" speed="5">
@@ -392,7 +392,8 @@
         <event-sheet>Title.xml</event-sheet>
         <event-sheet>Loader.xml</event-sheet>
         <event-sheet>LocalStorage.xml</event-sheet>
-        <event-sheet>Animations.xml</event-sheet>
+        <event-sheet>Controls.xml</event-sheet>
+        <event-sheet>Player.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="0">

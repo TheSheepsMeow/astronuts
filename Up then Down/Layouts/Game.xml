@@ -702,7 +702,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <moving>0</moving>
+                        <moving>false</moving>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

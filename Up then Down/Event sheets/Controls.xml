@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controls</name>
+    <events>
+        <event-group description="" sid="643672290292086" title="Controls">
+            <sub-events>
+                <comment>If left side of the player is tapped, the player moves to the left.</comment>
+                <event-block sid="385680320139860">
+                    <conditions>
+                        <condition id="1" name="On any click" sid="852454483775380" type="Mouse" />
+                        <condition id="-8" name="Compare two values" sid="714709561976341" type="System">
+                            <param id="0" name="First value">mouse.X</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">player.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="701794450549548" type="player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="670524209176650" type="player">
+                            <param id="0" name="Vector X">-160</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>If right side of the player is tapped, the player moves to the right.</comment>
+                <event-block sid="707390397282288">
+                    <conditions>
+                        <condition id="1" name="On any click" sid="294912970990832" type="Mouse" />
+                        <condition id="-8" name="Compare two values" sid="590355936875631" type="System">
+                            <param id="0" name="First value">mouse.X</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">player.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="398737137750259" type="player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="501176253638139" type="player">
+                            <param id="0" name="Vector X">160</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="210294595323809">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="310415724565478">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

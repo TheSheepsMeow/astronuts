@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
+        <include>Player</include>
+        <include>Controls</include>
         <include>LocalStorage</include>
         <variable constant="0" name="score" sid="438315306292690" static="0" type="number">0</variable>
         <variable constant="0" name="highScore" sid="288408401537732" static="0" type="number">1</variable>
@@ -177,90 +179,29 @@
                         <action id="0" name="Set text" sid="874256685827727" type="textScore">
                             <param id="0" name="Text">&quot;score: &quot; &amp; score &amp; newline &amp; &quot;high score: &quot; &amp; highScore</param>
                         </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="716942432924939" title="Group 1">
-            <sub-events>
-                <event-block sid="660050906061942">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="971828888100908">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="955629360883714" type="Touch">
-                            <param id="0" name="Object">thesheepsmeow</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="300553998901440" type="System">
-                            <param id="0" name="Variable">score</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="7" name="Play (by name)" sid="874057648628004" type="Audio">
-                            <param id="0" name="Folder">0</param>
-                            <param id="1" name="Audio file name">&quot;Start_sound_&quot; &amp; choose(1,2,3,4,5)</param>
-                            <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">0</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        <action id="0" name="Set text" sid="649623701199646" type="textScore">
+                            <param id="0" name="Text">score</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="263029380248975">
-                    <conditions />
-                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="901494045263555" title="Game">
             <sub-events>
+                <comment>Game starts with lava moving up.</comment>
                 <event-block sid="628197250530442">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="415947646707385" type="System" />
                     </conditions>
                     <actions>
                         <action id="-21" name="Reset global variables" sid="109246845459069" type="System" />
-                    </actions>
-                </event-block>
-                <comment>If left side of the player is tapped, the player moves to the left.</comment>
-                <event-block sid="749930374029439">
-                    <conditions>
-                        <condition id="1" name="On any click" sid="216990377564650" type="Mouse" />
-                        <condition id="-8" name="Compare two values" sid="530568016496372" type="System">
-                            <param id="0" name="First value">mouse.X</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">player.X</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="440717690161359" type="player">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="Platform" id="8" name="Set vector X" sid="617242745746332" type="player">
-                            <param id="0" name="Vector X">-160</param>
+                        <action id="-13" name="Set boolean" sid="354876652712455" type="deathFromBelow">
+                            <param id="0" name="Instance variable">moving</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <comment>If right side of the player is tapped, the player moves to the right.</comment>
-                <event-block sid="442287720088324">
-                    <conditions>
-                        <condition id="1" name="On any click" sid="937751537504534" type="Mouse" />
-                        <condition id="-8" name="Compare two values" sid="590908769283200" type="System">
-                            <param id="0" name="First value">mouse.X</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">player.X</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="583774329343217" type="player">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="Platform" id="8" name="Set vector X" sid="584984566463199" type="player">
-                            <param id="0" name="Vector X">160</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <comment>This spawns the platform.</comment>
                 <event-block sid="695100518924080">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="869968412978028" type="player">
@@ -289,7 +230,49 @@
                         <action id="-9" name="Destroy" sid="104146271854995" type="collectForPlatform" />
                     </actions>
                 </event-block>
-                <comment>This is a lose condition.</comment>
+                <comment>This triggers deathFromAbove to start moving down.</comment>
+                <event-block sid="148715105503938">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="509117907613516" type="player">
+                            <param id="0" name="Object">ceilingGoal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="706450179689432" type="deathFromBelow" />
+                        <action id="-13" name="Set boolean" sid="102663351726780" type="deathFromAbove">
+                            <param id="0" name="Instance variable">moving</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="304183569645009">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="360440143110148">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="761708762659714" title="Win condition">
+            <sub-events>
+                <event-block sid="670868789958986">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="255114526236354" type="player">
+                            <param id="0" name="Object">floorGoal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="901524010582596" type="System">
+                            <param id="0" name="Layout">Title</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="604012300532070" title="Lose conditions">
+            <sub-events>
                 <event-block any="1" sid="640509102094375">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="184366570020883" type="player">
@@ -312,93 +295,35 @@
                         <action id="-26" name="Restart layout" sid="497555026174300" type="System" />
                     </actions>
                 </event-block>
-                <comment>This prevents the player from getting stuck in the middle of a platform.</comment>
-                <event-block sid="663000509263869">
+                <comment>Death from below.</comment>
+                <event-block sid="812858458856939">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="128364080532862" type="player">
-                            <param id="0" name="Object">platform</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Set Y" sid="247446945363114" type="player">
-                            <param id="0" name="Y">self.Y-2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="162813523799465">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="165703684392990" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="649623701199646" type="textScore">
-                            <param id="0" name="Text">score</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="166221328728523">
-                    <conditions>
-                        <condition behavior="Platform" id="3" name="Is jumping" sid="764588777853814" type="player" />
-                        <condition id="-4" name="Trigger once while true" sid="425401007745994" type="System" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="989332062394872">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="578222801511531" type="System">
-                                    <param id="0" name="First value">mouse.X</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Second value">player.X</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="977438175706542" type="player">
-                                    <param id="0" name="Speed">360</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="470484348148124">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="395885406268796" type="System">
-                                    <param id="0" name="First value">mouse.X</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">player.X</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="247932164915496" type="player">
-                                    <param id="0" name="Speed">-360</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="356268207480011">
-                    <conditions>
-                        <condition behavior="Platform" id="2" name="Is on floor" sid="303471734525826" type="player" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Rotate" id="0" name="Set speed" sid="302095521896119" type="player">
-                            <param id="0" name="Speed">0</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="165352248480720" type="player">
-                            <param id="0" name="Angle">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="148715105503938">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="509117907613516" type="player">
-                            <param id="0" name="Object">ceilingGoal</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="706450179689432" type="deathFromBelow" />
-                        <action id="-13" name="Set boolean" sid="102663351726780" type="deathFromAbove">
+                        <condition id="-8" name="Is boolean instance variable set" sid="531286295907285" type="deathFromBelow">
                             <param id="0" name="Instance variable">moving</param>
-                            <param id="1" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="133509461987617" type="deathFromBelow">
+                            <param id="0" name="Angle">270</param>
+                            <param id="1" name="Distance">0.25</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment>Death from below.</comment>
+                <event-block sid="104010545117384">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="381504583115437" type="deathFromBelow">
+                            <param id="0" name="Instance variable">moving</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="731064303553549" type="deathFromBelow">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Death from above.</comment>
                 <event-block sid="216777075788790">
                     <conditions>
                         <condition id="-8" name="Is boolean instance variable set" sid="695887352487204" type="deathFromAbove">
@@ -415,6 +340,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Death from above.</comment>
                 <event-block sid="154396572276457">
                     <conditions>
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="445870527785802" type="deathFromAbove">
@@ -428,42 +354,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="670868789958986">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="255114526236354" type="player">
-                            <param id="0" name="Object">floorGoal</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="901524010582596" type="System">
-                            <param id="0" name="Layout">Title</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="304183569645009">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="360440143110148">
-                    <conditions />
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="791820689614525" title="Group 3">
-            <sub-events>
-                <event-block sid="275860810294666">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="245887690147196">
-                    <conditions />
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="604012300532070" title="Group 4">
-            <sub-events>
                 <event-block sid="219831161095762">
                     <conditions />
                     <actions />
