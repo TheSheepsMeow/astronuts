@@ -380,12 +380,6 @@
                 <instance-variable name="canJump" sid="237357182056851" type="boolean" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="Platform" sid="558722305408862">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="BoundToLayout" sid="650715254205789">
-                    <behavior id="bound" />
-                </behavior-type>
                 <behavior-type name="Rotate" sid="180076177589776">
                     <behavior id="Rotate" />
                 </behavior-type>

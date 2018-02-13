@@ -309,7 +309,7 @@
                     <actions>
                         <action id="-23" name="Move at angle" sid="133509461987617" type="deathFromBelow">
                             <param id="0" name="Angle">270</param>
-                            <param id="1" name="Distance">0.25</param>
+                            <param id="1" name="Distance">0.15*score</param>
                         </action>
                     </actions>
                 </event-block>

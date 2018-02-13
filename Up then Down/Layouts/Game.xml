@@ -110,7 +110,7 @@
                             <properties>
                                 <max-speed>330</max-speed>
                                 <acceleration>1500</acceleration>
-                                <deceleration>330</deceleration>
+                                <deceleration>600</deceleration>
                                 <jump-strength>500</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
@@ -134,8 +134,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>31.307579041</x>
-                        <y>1754.842651367</y>
+                        <x>31</x>
+                        <y>1737</y>
                         <z>0</z>
                         <width>41.352146149</width>
                         <height>41.352146149</height>
@@ -163,8 +163,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>205</x>
-                        <y>1585</y>
+                        <x>246</x>
+                        <y>1570</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -192,8 +192,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>195</x>
-                        <y>1412</y>
+                        <x>154</x>
+                        <y>1456</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -221,8 +221,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>114</x>
-                        <y>1308</y>
+                        <x>65</x>
+                        <y>1370</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -250,8 +250,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>280</x>
-                        <y>1309</y>
+                        <x>161</x>
+                        <y>1286</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -301,35 +301,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="collectForPlatform" uid="47">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Wrap">
-                            <properties>
-                                <wrap-to>Layout</wrap-to>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>276</x>
-                        <y>1147</y>
-                        <z>0</z>
-                        <width>27.459060669</width>
-                        <height>27.459060669</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="collectForPlatform" uid="48">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -347,8 +318,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>205</x>
-                        <y>1049</y>
+                        <x>166</x>
+                        <y>1085</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -376,8 +347,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>129</x>
-                        <y>1675</y>
+                        <x>157</x>
+                        <y>1657</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -444,8 +415,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>121</x>
-                        <y>951</y>
+                        <x>64</x>
+                        <y>972</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -473,8 +444,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>235</x>
-                        <y>795</y>
+                        <x>168</x>
+                        <y>867</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -502,66 +473,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>121</x>
-                        <y>620</y>
-                        <z>0</z>
-                        <width>27.459060669</width>
-                        <height>27.459060669</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="collectForPlatform" uid="56">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Wrap">
-                            <properties>
-                                <wrap-to>Layout</wrap-to>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>865</x>
-                        <y>623</y>
-                        <z>0</z>
-                        <width>27.459060669</width>
-                        <height>27.459060669</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="collectForPlatform" uid="57">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Wrap">
-                            <properties>
-                                <wrap-to>Layout</wrap-to>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>968</x>
-                        <y>661</y>
+                        <x>271</x>
+                        <y>752</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -593,7 +506,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>167</x>
-                        <y>389</y>
+                        <y>309</y>
                         <z>0</z>
                         <width>132</width>
                         <height>132</height>
@@ -702,7 +615,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>189</x>
-                        <y>2240</y>
+                        <y>2190</y>
                         <z>0</z>
                         <width>427</width>
                         <height>710</height>
@@ -743,7 +656,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>18</x>
-                        <y>1812</y>
+                        <y>1794</y>
                         <z>0</z>
                         <width>102</width>
                         <height>27</height>
@@ -783,8 +696,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>302</x>
-                        <y>1515</y>
+                        <x>286</x>
+                        <y>1202</y>
                         <z>0</z>
                         <width>102</width>
                         <height>27</height>
@@ -806,25 +719,6 @@
                         <canJump>false</canJump>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="Rotate">
                             <properties>
                                 <speed>180</speed>
@@ -836,11 +730,110 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>31.308000565</x>
-                        <y>1754.843017578</y>
+                        <x>31</x>
+                        <y>1737</y>
                         <z>0</z>
-                        <width>41.35200119</width>
-                        <height>41.35200119</height>
+                        <width>41</width>
+                        <height>41</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="collectForPlatform" uid="56">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Wrap">
+                            <properties>
+                                <wrap-to>Layout</wrap-to>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>168</x>
+                        <y>682</y>
+                        <z>0</z>
+                        <width>27.459060669</width>
+                        <height>27.459060669</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="collectForPlatform" uid="57">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Wrap">
+                            <properties>
+                                <wrap-to>Layout</wrap-to>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>60</x>
+                        <y>610</y>
+                        <z>0</z>
+                        <width>27.459060669</width>
+                        <height>27.459060669</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="platform" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Center</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Jumpthru">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>210</x>
+                        <y>510</y>
+                        <z>0</z>
+                        <width>102</width>
+                        <height>27</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -856,8 +849,8 @@
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>0</x>
-                <y>0</y>
+                <x>1</x>
+                <y>1</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -867,36 +860,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="textScore" uid="31">
-                    <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
-                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Text</text>
-                        <scale>2</scale>
-                        <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <character-spacing>0</character-spacing>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-9.18598938</x>
-                        <y>11</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>76</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="thesheepsmeow" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -978,6 +941,36 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="textScore" uid="31">
+                    <properties>
+                        <character-width>16</character-width>
+                        <character-height>16</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Text</text>
+                        <scale>2</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-9.18598938</x>
+                        <y>11</y>
+                        <z>0</z>
+                        <width>327</width>
+                        <height>76</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

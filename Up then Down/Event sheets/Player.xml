@@ -9,7 +9,6 @@
                 <event-block sid="384252115786484">
                     <conditions>
                         <condition behavior="Platform" id="3" name="Is jumping" sid="449262306288178" type="player" />
-                        <condition id="-4" name="Trigger once while true" sid="936636574701077" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
@@ -20,6 +19,7 @@
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Second value">player.X</param>
                                 </condition>
+                                <condition id="-4" name="Trigger once while true" sid="936636574701077" type="System" />
                             </conditions>
                             <actions>
                                 <action behavior="Rotate" id="0" name="Set speed" sid="661625086635664" type="playerAnimations">
@@ -41,6 +41,7 @@
                                     <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Second value">player.X</param>
                                 </condition>
+                                <condition id="-4" name="Trigger once while true" sid="175011855623958" type="System" />
                             </conditions>
                             <actions>
                                 <action behavior="Rotate" id="0" name="Set speed" sid="967822941241586" type="playerAnimations">
