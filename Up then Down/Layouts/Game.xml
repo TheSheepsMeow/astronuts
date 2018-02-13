@@ -164,7 +164,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>205</x>
-                        <y>1535</y>
+                        <y>1585</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -193,7 +193,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>195</x>
-                        <y>1362</y>
+                        <y>1412</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -222,7 +222,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>114</x>
-                        <y>1258</y>
+                        <y>1308</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -251,7 +251,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>280</x>
-                        <y>1259</y>
+                        <y>1309</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -319,7 +319,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>276</x>
-                        <y>1097</y>
+                        <y>1147</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -348,7 +348,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>205</x>
-                        <y>999</y>
+                        <y>1049</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -377,7 +377,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>129</x>
-                        <y>1635</y>
+                        <y>1675</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -445,7 +445,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>121</x>
-                        <y>901</y>
+                        <y>951</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -474,7 +474,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>235</x>
-                        <y>745</y>
+                        <y>795</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -503,7 +503,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>121</x>
-                        <y>570</y>
+                        <y>620</y>
                         <z>0</z>
                         <width>27.459060669</width>
                         <height>27.459060669</height>
@@ -702,7 +702,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>189</x>
-                        <y>2172.5</y>
+                        <y>2240</y>
                         <z>0</z>
                         <width>427</width>
                         <height>710</height>
@@ -784,7 +784,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>302</x>
-                        <y>1465</y>
+                        <y>1515</y>
                         <z>0</z>
                         <width>102</width>
                         <height>27</height>
