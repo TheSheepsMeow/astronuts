@@ -403,7 +403,10 @@
     <layout-folder>
         <layout>Loader.xml</layout>
         <layout>Title.xml</layout>
-        <layout>Game.xml</layout>
+        <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
+        <layout>Level 3.xml</layout>
+        <layout>Win.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game.xml</event-sheet>
@@ -453,6 +456,8 @@
         <file name="Start_sound_6.ogg" />
         <file name="Jump 10.m4a" />
         <file name="Jump 10.ogg" />
+        <file name="Pickup_coin 7.m4a" />
+        <file name="Pickup_coin 7.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
