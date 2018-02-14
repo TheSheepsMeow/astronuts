@@ -46,6 +46,9 @@
                                 <action behavior="Platform" id="8" name="Set vector X" sid="839236017283479" type="player">
                                     <param id="0" name="Vector X">-xVector</param>
                                 </action>
+                                <action id="7" name="Set mirrored" sid="204734404114900" type="playerAnimations">
+                                    <param id="0" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -89,6 +92,9 @@
                                 </action>
                                 <action behavior="Platform" id="8" name="Set vector X" sid="696473230235966" type="player">
                                     <param id="0" name="Vector X">xVector</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="129307513244576" type="playerAnimations">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
