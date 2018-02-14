@@ -5,7 +5,7 @@
     <events>
         <event-group description="" sid="643672290292086" title="Controls">
             <sub-events>
-                <variable constant="0" name="xVector" sid="660527691416047" static="0" type="number">225</variable>
+                <variable constant="0" name="xVector" sid="660527691416047" static="0" type="number">250</variable>
                 <comment>If left side of the player is tapped, the player moves to the left.</comment>
                 <event-block sid="385680320139860">
                     <conditions>
@@ -22,6 +22,12 @@
                         </action>
                         <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="670524209176650" type="player">
                             <param id="0" name="Vector X">-xVector</param>
+                        </action>
+                        <action id="0" name="Play" sid="498985019546282" type="Audio">
+                            <param id="0" name="Audio file">Jump 10</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -60,6 +66,12 @@
                         </action>
                         <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="501176253638139" type="player">
                             <param id="0" name="Vector X">xVector</param>
+                        </action>
+                        <action id="0" name="Play" sid="754168802527581" type="Audio">
+                            <param id="0" name="Audio file">Jump 10</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>

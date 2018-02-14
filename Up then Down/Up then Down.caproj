@@ -451,6 +451,8 @@
         <file name="Start_sound_5.ogg" />
         <file name="Start_sound_6.m4a" />
         <file name="Start_sound_6.ogg" />
+        <file name="Jump 10.m4a" />
+        <file name="Jump 10.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
