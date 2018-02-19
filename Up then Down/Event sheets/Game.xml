@@ -7,7 +7,7 @@
         <include>Controls</include>
         <include>LocalStorage</include>
         <variable constant="0" name="score" sid="438315306292690" static="0" type="number">0</variable>
-        <variable constant="0" name="highScore" sid="288408401537732" static="0" type="number">1</variable>
+        <variable constant="0" name="highScore" sid="288408401537732" static="0" type="number">50</variable>
         <event-group description="Activate / deactivate this group as needed." sid="303387383532753" title="Debug">
             <sub-events>
                 <event-block sid="626922229723868">
@@ -71,7 +71,11 @@
                     </actions>
                 </event-block>
                 <event-block sid="317872613625974">
-                    <conditions />
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="188498241187581" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                        </condition>
+                    </conditions>
                     <actions />
                 </event-block>
                 <event-block sid="428917947614346">
@@ -93,6 +97,9 @@
                             <param id="0" name="Object">menuButtonHome</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="467109666790843" type="menuButtonHome" />
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="816493059267142" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action disabled="1" id="-2" name="Go to layout" sid="905183702433019" type="System">
@@ -128,6 +135,9 @@
                             <param id="0" name="Object">endBG</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="678651861467026" type="endBG" />
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="659071372404761" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-4" name="Set layer visible" sid="868575732170895" type="System">
@@ -188,6 +198,9 @@
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="978718162366947" type="System">
                             <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="642665921224063" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -330,6 +343,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="416577177164109" type="player" />
+                        <action id="-9" name="Destroy" sid="625697161717688" type="playerAnimations" />
                         <action id="0" name="Spawn another object" sid="531779755678013" type="player">
                             <param id="0" name="Object">deathParticle</param>
                             <param id="1" name="Layer">self.LayerName</param>
@@ -344,64 +358,74 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>Death from below.</comment>
-                <event-block sid="812858458856939">
+                <event-block sid="356620266303988">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="531286295907285" type="deathFromBelow">
-                            <param id="0" name="Instance variable">moving</param>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="153281529737851" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-23" name="Move at angle" sid="133509461987617" type="deathFromBelow">
-                            <param id="0" name="Angle">270</param>
-                            <param id="1" name="Distance">0.15*score</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Death from below.</comment>
-                <event-block sid="104010545117384">
-                    <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="381504583115437" type="deathFromBelow">
-                            <param id="0" name="Instance variable">moving</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-23" name="Move at angle" sid="731064303553549" type="deathFromBelow">
-                            <param id="0" name="Angle">90</param>
-                            <param id="1" name="Distance">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Death from above.</comment>
-                <event-block sid="216777075788790">
-                    <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="695887352487204" type="deathFromAbove">
-                            <param id="0" name="Instance variable">moving</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-23" name="Move at angle" sid="436396888474559" type="deathFromAbove">
-                            <param id="0" name="Angle">90</param>
-                            <param id="1" name="Distance">2</param>
-                        </action>
-                        <action behavior="Platform" id="4" name="Set jump strength" sid="587555181368572" type="player">
-                            <param id="0" name="Jump strength">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Death from above.</comment>
-                <event-block sid="154396572276457">
-                    <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="445870527785802" type="deathFromAbove">
-                            <param id="0" name="Instance variable">moving</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-23" name="Move at angle" sid="637780947209203" type="deathFromAbove">
-                            <param id="0" name="Angle">90</param>
-                            <param id="1" name="Distance">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <comment>Death from below.</comment>
+                        <event-block sid="812858458856939">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="531286295907285" type="deathFromBelow">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="133509461987617" type="deathFromBelow">
+                                    <param id="0" name="Angle">270</param>
+                                    <param id="1" name="Distance">0.15*score</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Death from below.</comment>
+                        <event-block sid="104010545117384">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="381504583115437" type="deathFromBelow">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="731064303553549" type="deathFromBelow">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Death from above.</comment>
+                        <event-block sid="216777075788790">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="695887352487204" type="deathFromAbove">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="436396888474559" type="deathFromAbove">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">2</param>
+                                </action>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="587555181368572" type="player">
+                                    <param id="0" name="Jump strength">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Death from above.</comment>
+                        <event-block sid="154396572276457">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="445870527785802" type="deathFromAbove">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="637780947209203" type="deathFromAbove">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="219831161095762">
                     <conditions />

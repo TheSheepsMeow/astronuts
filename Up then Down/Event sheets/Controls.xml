@@ -70,12 +70,6 @@
                         <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="501176253638139" type="player">
                             <param id="0" name="Vector X">xVector</param>
                         </action>
-                        <action id="0" name="Play" sid="754168802527581" type="Audio">
-                            <param id="0" name="Audio file">Jump 10</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="707887189230449">
@@ -98,9 +92,32 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="210294595323809">
+                            <conditions>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="332423394025304" type="Audio">
+                                    <param id="0" name="Tag">&quot;jump&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="754168802527581" type="Audio">
+                                    <param id="0" name="Audio file">Jump 10</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;jump&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="210294595323809">
+                <event-block sid="889618618395471">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="157584846016731">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="678274544659935">
                     <conditions />
                     <actions />
                 </event-block>
