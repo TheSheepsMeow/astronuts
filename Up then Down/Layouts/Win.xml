@@ -360,11 +360,11 @@
                         <x>175</x>
                         <y>-57</y>
                         <z>0</z>
-                        <width>401</width>
-                        <height>656</height>
+                        <width>156.640625</width>
+                        <height>437.333343506</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.74000001</hotspotY>
                         <angle>3.141592741</angle>
                         <opacity>1</opacity>
                     </world>

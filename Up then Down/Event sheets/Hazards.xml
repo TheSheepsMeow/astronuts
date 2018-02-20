@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Hazards</name>
+    <events>
+        <event-group description="" sid="241560090864113" title="Losing">
+            <sub-events>
+                <event-block sid="273742969474254">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="218897429658520">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="390593410697290" type="player">
+                            <param id="0" name="Object">deathFromBelow</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="220387997321005" type="player">
+                            <param id="0" name="Object">deathFromAbove</param>
+                        </condition>
+                        <condition disabled="1" id="0" name="On collision with another object" sid="729592703151177" type="player">
+                            <param id="0" name="Object">pawLeft</param>
+                        </condition>
+                        <condition disabled="1" id="0" name="On collision with another object" sid="389594748223542" type="player">
+                            <param id="0" name="Object">pawRight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="470630304512660" type="player" />
+                        <action id="-9" name="Destroy" sid="152998903787506" type="playerAnimations" />
+                        <action id="0" name="Spawn another object" sid="633269604524663" type="player">
+                            <param id="0" name="Object">deathParticle</param>
+                            <param id="1" name="Layer">self.LayerName</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="111362725770437" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="230185631474309" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="695123524575264">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="965380811449155" title="Enemies">
+            <sub-events>
+                <event-block sid="148149264456123">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="858539022055275">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="123979813346228">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="979349681181709">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="782965953353759">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="564361777627530" title="Lava">
+            <sub-events>
+                <comment>Game starts with lava moving up.</comment>
+                <event-block sid="737895990780938">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="204322724205485" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="465331632442765" type="deathFromBelow">
+                            <param id="0" name="Instance variable">moving</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="588864712414590">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="242243290095231" title="Cat">
+            <sub-events>
+                <event-block sid="507959851525570">
+                    <conditions>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="895478420917343" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Death from below.</comment>
+                        <event-block sid="763442997995807">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="338227256918031" type="deathFromBelow">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-23" name="Move at angle" sid="673779145927431" type="deathFromBelow">
+                                    <param id="0" name="Angle">270</param>
+                                    <param id="1" name="Distance">0.15*score</param>
+                                </action>
+                                <action id="-23" name="Move at angle" sid="890062394058145" type="deathFromBelow">
+                                    <param id="0" name="Angle">270</param>
+                                    <param id="1" name="Distance">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Death from below.</comment>
+                        <event-block sid="163524774881627">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="438929895502389" type="deathFromBelow">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="852933839109599" type="deathFromBelow">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Death from above.</comment>
+                        <event-block sid="155976872390993">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="399503002640104" type="deathFromAbove">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="866986973661935" type="deathFromAbove">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">2</param>
+                                </action>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="937129232295849" type="player">
+                                    <param id="0" name="Jump strength">50</param>
+                                </action>
+                                <action id="-23" name="Move at angle" sid="546691442838236" type="pawLeft">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">2</param>
+                                </action>
+                                <action id="-23" name="Move at angle" sid="661060500208996" type="pawRight">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Death from above.</comment>
+                        <event-block sid="921477721861557">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="696692656403527" type="deathFromAbove">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="105951091971812" type="deathFromAbove">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="863615778020851">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -3,54 +3,87 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
-        <event-group description="" sid="710906386721571" title="Player movement and animations">
+        <event-group description="" sid="526907247373633" title="Player Initialization">
+            <sub-events>
+                <event-block sid="293365681136947">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="838720782928815">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="290753980547800">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="809387451862049" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="490434068341420" type="System" />
+                        <action id="-4" name="Set position to another object" sid="411638426153579" type="playerAnimations">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="102541943450496" type="playerAnimations">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="302361816238402">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="132998606423611" title="Player movement and animations">
             <sub-events>
                 <comment>This makes the player rotate in the air.</comment>
-                <event-block sid="384252115786484">
+                <event-block sid="223126901349930">
                     <conditions>
-                        <condition behavior="Platform" id="3" name="Is jumping" sid="449262306288178" type="player" />
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="805226709709905" type="player" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="466572818841979">
+                        <event-block sid="973878034276661">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="234209970423779" type="System">
+                                <condition id="-8" name="Compare two values" sid="557002910874406" type="System">
                                     <param id="0" name="First value">mouse.X</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Second value">player.X</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" sid="936636574701077" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="391138775706060" type="System" />
                             </conditions>
                             <actions>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="661625086635664" type="playerAnimations">
+                                <action behavior="Rotate" id="0" name="Set speed" sid="535215554226090" type="playerAnimations">
                                     <param id="0" name="Speed">360</param>
                                 </action>
-                                <action behavior="Rotate" id="1" name="Set acceleration" sid="558908921008778" type="playerAnimations">
+                                <action behavior="Rotate" id="1" name="Set acceleration" sid="251277762800504" type="playerAnimations">
                                     <param id="0" name="Acceleration">360</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="609410226667290" type="playerAnimations">
+                                <action id="4" name="Set animation" sid="869491384463898" type="playerAnimations">
                                     <param id="0" name="Animation">&quot;Jump&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="502953290201015">
+                        <event-block sid="469432711328321">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="741278206711295" type="System">
+                                <condition id="-8" name="Compare two values" sid="427075332814765" type="System">
                                     <param id="0" name="First value">mouse.X</param>
                                     <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Second value">player.X</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" sid="175011855623958" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="348000018504558" type="System" />
                             </conditions>
                             <actions>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="967822941241586" type="playerAnimations">
+                                <action behavior="Rotate" id="0" name="Set speed" sid="506572101931904" type="playerAnimations">
                                     <param id="0" name="Speed">-360</param>
                                 </action>
-                                <action behavior="Rotate" id="1" name="Set acceleration" sid="453904536370099" type="playerAnimations">
+                                <action behavior="Rotate" id="1" name="Set acceleration" sid="454527645940600" type="playerAnimations">
                                     <param id="0" name="Acceleration">-360</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="818253210117884" type="playerAnimations">
+                                <action id="4" name="Set animation" sid="894592985956601" type="playerAnimations">
                                     <param id="0" name="Animation">&quot;Jump&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -59,56 +92,52 @@
                     </sub-events>
                 </event-block>
                 <comment>This stops the player from rotating when they are on the floor.</comment>
-                <event-block sid="791297726816180">
+                <event-block sid="388782906487077">
                     <conditions>
-                        <condition behavior="Platform" id="9" name="On landed" sid="952090247794504" type="player" />
+                        <condition behavior="Platform" id="9" name="On landed" sid="686550015965269" type="player" />
                     </conditions>
                     <actions>
-                        <action behavior="Rotate" id="0" name="Set speed" sid="803408756527009" type="playerAnimations">
+                        <action behavior="Rotate" id="0" name="Set speed" sid="988767924730504" type="playerAnimations">
                             <param id="0" name="Speed">0</param>
                         </action>
-                        <action behavior="Rotate" id="1" name="Set acceleration" sid="477704792058361" type="playerAnimations">
+                        <action behavior="Rotate" id="1" name="Set acceleration" sid="376905172907574" type="playerAnimations">
                             <param id="0" name="Acceleration">0</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="437689087093372" type="playerAnimations">
+                        <action id="-8" name="Set angle" sid="225151281421029" type="playerAnimations">
                             <param id="0" name="Angle">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="903518562210805" type="playerAnimations">
+                        <action id="4" name="Set animation" sid="400586980263273" type="playerAnimations">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
                 <comment>This prevents the player from getting stuck in the middle of a platform.</comment>
-                <event-block sid="311931054983262">
+                <event-block sid="439035560108626">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="433393426064620" type="player">
+                        <condition id="1" name="Is overlapping another object" sid="392061978188188" type="player">
                             <param id="0" name="Object">platform</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Set Y" sid="616259017140518" type="player">
+                        <action id="-2" name="Set Y" sid="408057523455304" type="player">
                             <param id="0" name="Y">self.Y-2</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="446695419013785">
+                <event-block sid="360742818554172">
                     <conditions />
                     <actions />
                 </event-block>
-                <event-block sid="268031301799958">
+                <event-block sid="440132033070282">
                     <conditions />
                     <actions />
                 </event-block>
-                <event-block sid="886442358352533">
+                <event-block sid="957479753061304">
                     <conditions />
                     <actions />
                 </event-block>
-                <event-block sid="545242018982862">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="193003726337573">
+                <event-block sid="631736115966301">
                     <conditions />
                     <actions />
                 </event-block>
