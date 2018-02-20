@@ -2,7 +2,7 @@
 <c2project>
     <name>Up then Down</name>
     <description></description>
-    <version>0.1</version>
+    <version>0.3</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -294,7 +294,7 @@
                     <instance-variable name="moving" sid="819209693460228" type="boolean" />
                 </instance-variables>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734894084785580" speed="5">
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734894084785580" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Layer 1.png">
                             <collision-poly>
                                 <point x="0.0333333" y="0.0142857" />
@@ -306,6 +306,17 @@
                                 <point x="0.0833333" y="0.5" />
                             </collision-poly>
                         </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.916667" y="0.5" />
+                                <point x="0.8" y="0.914286" />
+                                <point x="0.5" y="0.985714" />
+                                <point x="0.2" y="0.914286" />
+                                <point x="0.083333" y="0.5" />
+                                <point x="0.166667" y="0.0714286" />
+                                <point x="0.966667" y="0.0142857" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -315,7 +326,7 @@
                     <instance-variable name="moving" sid="762642100290066" type="boolean" />
                 </instance-variables>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578463807851829" speed="5">
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578463807851829" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="C:\Users\brian\Downloads\Layer 2.png">
                             <collision-poly>
                                 <point x="0.0833333" y="0.0420168" />
@@ -327,6 +338,68 @@
                                 <point x="0.0333333" y="0.495798" />
                             </collision-poly>
                         </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504202">
+                            <collision-poly>
+                                <point x="0.966667" y="0.495798" />
+                                <point x="0.8" y="0.89916" />
+                                <point x="0.5" y="0.957983" />
+                                <point x="0.233333" y="0.882353" />
+                                <point x="0" y="0.495798" />
+                                <point x="0.05" y="0.0252101" />
+                                <point x="0.916667" y="0.0420168" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pusher" sid="821714308416391">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="993586041146291">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="126100196180104">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="557595642048812" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spikey" sid="994249278453535">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="countdown" sid="776218971136168" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="425090214576894">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791728893674967" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="3" loop="0" name="Spikey" pingpong="0" repeatcount="1" repeatto="0" sid="319095749414454" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -340,9 +413,6 @@
                 <behaviors>
                     <behavior-type name="Platform" sid="740728692953817">
                         <behavior id="Platform" />
-                    </behavior-type>
-                    <behavior-type name="ScrollTo" sid="561996853829463">
-                        <behavior id="scrollto" />
                     </behavior-type>
                     <behavior-type name="BoundToLayout" sid="385276491089802">
                         <behavior id="bound" />
@@ -438,35 +508,49 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-type name="platform" sid="215760698261785">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Solid" sid="915771958588575">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Fade" sid="984279053092653">
-                    <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="806387820783101">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-        </object-type>
+        <object-folder name="platforms">
+            <object-type name="platform" sid="215760698261785">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="915771958588575">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="984279053092653">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Jumpthru" sid="806387820783101">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="platformJumpThru" sid="858994209014515">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="515375596081628">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Jumpthru" sid="491716166365195">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="trampoline" sid="696090724923364">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617249426721472" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="2" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="619088638866564" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="upfloor" sid="694951769311365">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="platformJumpThru" sid="858994209014515">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Fade" sid="515375596081628">
-                    <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="491716166365195">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <texture />
         </object-type>
         <object-type name="palette" sid="249477458393885">
             <plugin id="Sprite" />
@@ -476,34 +560,15 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="trampoline" sid="696090724923364">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617249426721472" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="2" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="619088638866564" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="pusher" sid="821714308416391">
+        <object-type name="camera" sid="292229778277874">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="993586041146291">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Sine" sid="126100196180104">
-                    <behavior id="Sin" />
+                <behavior-type name="ScrollTo" sid="480010835620346">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="2" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="557595642048812" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713829934473333" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>

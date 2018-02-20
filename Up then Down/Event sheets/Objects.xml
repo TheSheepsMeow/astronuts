@@ -114,9 +114,9 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="117055138506064" type="ceilingGoal" />
-                        <action behavior="ScrollTo" id="0" name="Shake" sid="363340861260647" type="player">
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="363340861260647" type="camera">
                             <param id="0" name="Magnitude">20</param>
-                            <param id="1" name="Duration">2</param>
+                            <param id="1" name="Duration">4</param>
                             <param id="2" name="Mode">0</param>
                         </action>
                     </actions>
@@ -187,22 +187,6 @@
                     <actions />
                 </event-block>
                 <event-block sid="116996666019852">
-                    <conditions />
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="472277156505641" title="Platforms5">
-            <sub-events>
-                <event-block sid="787381223475057">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="203891025107975">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="399146307935638">
                     <conditions />
                     <actions />
                 </event-block>

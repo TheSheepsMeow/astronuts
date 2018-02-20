@@ -6,9 +6,37 @@
         <event-group description="" sid="241560090864113" title="Losing">
             <sub-events>
                 <event-block sid="273742969474254">
-                    <conditions />
-                    <actions />
+                    <conditions>
+                        <condition id="0" name="On function" sid="377573600374500" type="Function">
+                            <param id="0" name="Name">&quot;losing&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="729002465620942" type="camera">
+                            <param id="0" name="Magnitude">20</param>
+                            <param id="1" name="Duration">0.4</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="495426689330905" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="633269604524663" type="player">
+                            <param id="0" name="Object">deathParticle</param>
+                            <param id="1" name="Layer">self.LayerName</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="111362725770437" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="152998903787506" type="playerAnimations" />
+                        <action id="-9" name="Destroy" sid="470630304512660" type="player" />
+                        <action id="-4" name="Set layer visible" sid="230185631474309" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
                 </event-block>
+                <comment></comment>
                 <event-block any="1" sid="218897429658520">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="390593410697290" type="player">
@@ -25,19 +53,9 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="470630304512660" type="player" />
-                        <action id="-9" name="Destroy" sid="152998903787506" type="playerAnimations" />
-                        <action id="0" name="Spawn another object" sid="633269604524663" type="player">
-                            <param id="0" name="Object">deathParticle</param>
-                            <param id="1" name="Layer">self.LayerName</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="111362725770437" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="230185631474309" type="System">
-                            <param id="0" name="Layer">&quot;End&quot;</param>
-                            <param id="1" name="Visibility">1</param>
+                        <action id="0" name="Call function" sid="765127609850978" type="Function">
+                            <param id="0" name="Name">&quot;losing&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -47,21 +65,165 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="965380811449155" title="Enemies">
+        <event-group description="" sid="738692033207708" title="pusher">
             <sub-events>
-                <event-block sid="148149264456123">
+                <event-block any="1" sid="107304780374974">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="292088108230949" type="System">
+                            <param id="0" name="First value">pusher.Sine.CyclePosition</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">0.25</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="389994422385234" type="System">
+                            <param id="0" name="First value">pusher.Sine.CyclePosition</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0.75</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="379828931677365" type="pusher">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="598877417761577">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="631071336393705" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="527055177242178" type="pusher">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="833066107252747">
                     <conditions />
                     <actions />
                 </event-block>
-                <event-block sid="858539022055275">
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="965380811449155" title="spikey">
+            <sub-events>
+                <comment></comment>
+                <event-block sid="148149264456123">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="789525548301053" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="685065130340334" type="spikey">
+                            <param id="0" name="Instance variable">countdown</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="361798413923158" type="spikey">
+                            <param id="0" name="Instance variable">countdown</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="752236510824049">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="622665057860703" type="spikey">
+                            <param id="0" name="Instance variable">countdown</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="265818043096464">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="257283689508705" type="spikey">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="832526676668874" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="945143094443109" type="spikey">
+                                    <param id="0" name="Animation">&quot;Spikey&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="590996068512662" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="888716770463255" type="spikey">
+                                    <param id="0" name="Speed">-10</param>
+                                </action>
+                                <action id="3" name="Start" sid="113821756672780" type="spikey">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="805859683878470" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="949239976000448" type="spikey">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="222222683277287" type="spikey">
+                                    <param id="0" name="Instance variable">countdown</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="817781701952898">
                     <conditions />
                     <actions />
+                </event-block>
+                <comment>safe when square</comment>
+                <event-block sid="858539022055275">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="242985821366953" type="spikey">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="784460825883595" type="spikey">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="123979813346228">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="642289882634144" type="spikey">
+                            <param id="0" name="Animation">&quot;Spikey&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="133418868069345" type="spikey">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>dangerous when spikey</comment>
+                <event-block sid="979349681181709">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="352926450780771" type="spikey">
+                            <param id="0" name="Animation">&quot;Spikey&quot;</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="309670464943448" type="player">
+                            <param id="0" name="Object">spikey</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="421257170917290" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="273631793899496" type="Function">
+                            <param id="0" name="Name">&quot;losing&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="481686380505050">
                     <conditions />
                     <actions />
                 </event-block>
-                <event-block sid="979349681181709">
+                <event-block sid="525665291165967">
                     <conditions />
                     <actions />
                 </event-block>
