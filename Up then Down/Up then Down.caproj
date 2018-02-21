@@ -576,6 +576,48 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TiledBackground" sid="680494689812056">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\GJ Lee\Desktop\bg_gradient.png" />
+        </object-type>
+        <object-type name="star" sid="448571890653584">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141518506771803" speed="5">
+                    <frame duration="1" hotspotX="0.571429" hotspotY="0.571429" original-source="C:\Users\GJ Lee\Desktop\bg_star.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.285714" />
+                            <point x="0.5" y="0.142857" />
+                            <point x="0.714286" y="0.285714" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="0.714286" y="0.714286" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg_clouds" sid="164964187728265">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154503389429011" speed="5">
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.503185" original-source="C:\Users\GJ Lee\Desktop\bg_atmosphere.png">
+                        <collision-poly>
+                            <point x="0.249201" y="0.496815" />
+                            <point x="0.498403" y="0.248408" />
+                            <point x="0.750799" y="0.496815" />
+                            <point x="0.750799" y="0.496815" />
+                            <point x="0.750799" y="0.503185" />
+                            <point x="0.498403" y="0.751592" />
+                            <point x="0.249201" y="0.503185" />
+                            <point x="0.249201" y="0.496815" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Collectibles" plugin-id="Sprite" sid="526221290032440">
@@ -591,6 +633,12 @@
         <layout>Level 1.xml</layout>
         <layout>Level 2.xml</layout>
         <layout>Level 3.xml</layout>
+        <layout>Level 4.xml</layout>
+        <layout>Level 5.xml</layout>
+        <layout>Level 6.xml</layout>
+        <layout>Level 7.xml</layout>
+        <layout>Level 8.xml</layout>
+        <layout>Level 9.xml</layout>
         <layout>Storage.xml</layout>
         <layout>Win.xml</layout>
     </layout-folder>

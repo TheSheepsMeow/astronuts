@@ -18,8 +18,8 @@
             <background-color>153,204,204</background-color>
             <transparent>0</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -74,6 +74,70 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TiledBackground" uid="280">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-47</x>
+                        <y>-3</y>
+                        <z>0</z>
+                        <width>441</width>
+                        <height>509</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="star" uid="281">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-22</x>
+                        <y>412</y>
+                        <z>0</z>
+                        <width>7</width>
+                        <height>7</height>
+                        <depth>0</depth>
+                        <hotspotX>0.571428597</hotspotX>
+                        <hotspotY>0.571428597</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bg_clouds" uid="282">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>329.581542969</x>
+                        <y>497.770690918</y>
+                        <z>0</z>
+                        <width>691</width>
+                        <height>242</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501597464</hotspotX>
+                        <hotspotY>0.503184736</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.150000006</opacity>
                     </world>
                 </instance>
             </instances>
