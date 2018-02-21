@@ -449,6 +449,9 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\SquirrelRoll1.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\SquirrelRoll2.png" />
                     </animation>
+                    <animation framecount="1" loop="0" name="Death" pingpong="0" repeatcount="1" repeatto="0" sid="641557582354543" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Squirrel-Death.png" />
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="deathParticle" sid="413178623397159">
