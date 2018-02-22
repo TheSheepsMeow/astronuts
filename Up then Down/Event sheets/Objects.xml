@@ -6,9 +6,19 @@
         <include>Controls</include>
         <event-group description="" sid="340887233158707" title="Platforms">
             <sub-events>
+                <comment>prevents player from getting stuck in the floor</comment>
                 <event-block sid="816310409103254">
-                    <conditions />
-                    <actions />
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="451560857868065" type="player">
+                            <param id="0" name="Object">platformJumpThru</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="679946627973858" type="player">
+                            <param id="0" name="Angle">270</param>
+                            <param id="1" name="Distance">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="172147562907282">
                     <conditions />

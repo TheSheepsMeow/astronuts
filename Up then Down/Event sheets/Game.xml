@@ -303,7 +303,7 @@
                     <actions>
                         <action id="-3" name="Set position" sid="400810853423746" type="camera">
                             <param id="0" name="X">LayoutWidth/2</param>
-                            <param id="1" name="Y">player.Y</param>
+                            <param id="1" name="Y">lerp(camera.Y, player.Y, 0.05)</param>
                         </action>
                     </actions>
                 </event-block>

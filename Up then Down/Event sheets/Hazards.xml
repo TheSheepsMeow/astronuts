@@ -77,38 +77,44 @@
         </event-group>
         <event-group description="" sid="738692033207708" title="pusher">
             <sub-events>
-                <event-block any="1" sid="107304780374974">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="292088108230949" type="System">
-                            <param id="0" name="First value">pusher.Sine.CyclePosition</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">0.25</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="389994422385234" type="System">
-                            <param id="0" name="First value">pusher.Sine.CyclePosition</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">0.75</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="379828931677365" type="pusher">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="598877417761577">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="631071336393705" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="527055177242178" type="pusher">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="833066107252747">
-                    <conditions />
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="528760545058313" type="System">
+                            <param id="0" name="Object">pusher</param>
+                        </condition>
+                    </conditions>
                     <actions />
+                    <sub-events>
+                        <event-block any="1" sid="107304780374974">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="292088108230949" type="System">
+                                    <param id="0" name="First value">pusher.Sine.CyclePosition</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">0.25</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="389994422385234" type="System">
+                                    <param id="0" name="First value">pusher.Sine.CyclePosition</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="379828931677365" type="pusher">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="598877417761577">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="631071336393705" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="527055177242178" type="pusher">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -168,7 +174,7 @@
                                     <param id="0" name="From">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="805859683878470" type="System">
-                                    <param id="0" name="Seconds">0.2</param>
+                                    <param id="0" name="Seconds">0.3</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="949239976000448" type="spikey">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -250,16 +256,29 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="204322724205485" type="System" />
                     </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="588864712414590">
+                    <conditions>
+                        <condition id="0" name="On any touch start" sid="370103434806385" type="Touch" />
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="989252384415906" type="deathFromBelow">
+                            <param id="0" name="Instance variable">moving</param>
+                        </condition>
+                    </conditions>
                     <actions>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="171010820891045" type="camera">
+                            <param id="0" name="Magnitude">5</param>
+                            <param id="1" name="Duration">0.4</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="719643189331854" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
                         <action id="-13" name="Set boolean" sid="465331632442765" type="deathFromBelow">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="588864712414590">
-                    <conditions />
-                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -315,18 +334,18 @@
                             <actions>
                                 <action id="-23" name="Move at angle" sid="866986973661935" type="deathFromAbove">
                                     <param id="0" name="Angle">90</param>
-                                    <param id="1" name="Distance">2</param>
+                                    <param id="1" name="Distance">1.5</param>
                                 </action>
                                 <action behavior="Platform" id="4" name="Set jump strength" sid="937129232295849" type="player">
                                     <param id="0" name="Jump strength">50</param>
                                 </action>
                                 <action id="-23" name="Move at angle" sid="546691442838236" type="pawLeft">
                                     <param id="0" name="Angle">90</param>
-                                    <param id="1" name="Distance">2</param>
+                                    <param id="1" name="Distance">1.5</param>
                                 </action>
                                 <action id="-23" name="Move at angle" sid="661060500208996" type="pawRight">
                                     <param id="0" name="Angle">90</param>
-                                    <param id="1" name="Distance">2</param>
+                                    <param id="1" name="Distance">1.5</param>
                                 </action>
                             </actions>
                         </event-block>
