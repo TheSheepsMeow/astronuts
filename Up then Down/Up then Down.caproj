@@ -273,7 +273,18 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821632053730471" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.74" original-source="C:\Users\brian\Downloads\Solo_cat_head.png" />
+                        <frame duration="1" hotspotX="0.502381" hotspotY="0.751111" original-source="C:\Users\GJ Lee\Desktop\cathead.png">
+                            <collision-poly>
+                                <point x="0.00675677" y="0.324176" />
+                                <point x="0.503378" y="0.00549451" />
+                                <point x="0.993243" y="0.335165" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.918919" y="0.543956" />
+                                <point x="0.503378" y="0.994505" />
+                                <point x="0.0844595" y="0.549451" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -295,18 +306,18 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734894084785580" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Layer 1.png">
+                        <frame duration="1" hotspotX="0.496" hotspotY="0.501266" original-source="C:\Users\GJ Lee\Desktop\catpaw.png">
                             <collision-poly>
-                                <point x="0.0333333" y="0.0142857" />
-                                <point x="0.833333" y="0.0714286" />
                                 <point x="0.916667" y="0.5" />
                                 <point x="0.8" y="0.914286" />
                                 <point x="0.5" y="0.985714" />
                                 <point x="0.2" y="0.914286" />
-                                <point x="0.0833333" y="0.5" />
+                                <point x="0.083333" y="0.5" />
+                                <point x="0.166667" y="0.0714286" />
+                                <point x="0.966667" y="0.0142857" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.496" hotspotY="0.501266">
                             <collision-poly>
                                 <point x="0.916667" y="0.5" />
                                 <point x="0.8" y="0.914286" />
@@ -327,28 +338,8 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578463807851829" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="C:\Users\brian\Downloads\Layer 2.png">
-                            <collision-poly>
-                                <point x="0.0833333" y="0.0420168" />
-                                <point x="0.95" y="0.0252101" />
-                                <point x="1" y="0.495798" />
-                                <point x="0.766667" y="0.882353" />
-                                <point x="0.5" y="0.957983" />
-                                <point x="0.2" y="0.89916" />
-                                <point x="0.0333333" y="0.495798" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.504202">
-                            <collision-poly>
-                                <point x="0.966667" y="0.495798" />
-                                <point x="0.8" y="0.89916" />
-                                <point x="0.5" y="0.957983" />
-                                <point x="0.233333" y="0.882353" />
-                                <point x="0" y="0.495798" />
-                                <point x="0.05" y="0.0252101" />
-                                <point x="0.916667" y="0.0420168" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.501266" original-source="C:\Users\GJ Lee\Desktop\catpaw.png" />
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.501266" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -498,7 +489,18 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="888354409032471" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\spaceco.png">
+                            <collision-poly>
+                                <point x="0.196429" y="0.166667" />
+                                <point x="0.5" y="0" />
+                                <point x="0.803571" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.839286" y="0.863636" />
+                                <point x="0.5" y="1" />
+                                <point x="0.160714" y="0.863636" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
