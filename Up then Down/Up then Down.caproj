@@ -469,7 +469,18 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985298424298743" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\normalAcorn.png">
+                            <collision-poly>
+                                <point x="0.232143" y="0.19697" />
+                                <point x="0.5" y="0.030303" />
+                                <point x="0.785714" y="0.181818" />
+                                <point x="0.964286" y="0.5" />
+                                <point x="0.803571" y="0.833333" />
+                                <point x="0.5" y="0.969697" />
+                                <point x="0.196429" y="0.833333" />
+                                <point x="0.0535714" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
