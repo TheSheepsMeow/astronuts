@@ -53,7 +53,7 @@
                             <param id="0" name="Object">deathFromBelow</param>
                         </condition>
                         <condition id="0" name="On collision with another object" sid="220387997321005" type="player">
-                            <param id="0" name="Object">deathFromAbove</param>
+                            <param id="0" name="Object">catHeadBody</param>
                         </condition>
                         <condition disabled="1" id="0" name="On collision with another object" sid="729592703151177" type="player">
                             <param id="0" name="Object">pawLeft</param>
@@ -327,12 +327,12 @@
                         <comment>Death from above.</comment>
                         <event-block sid="155976872390993">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="399503002640104" type="deathFromAbove">
+                                <condition id="-8" name="Is boolean instance variable set" sid="399503002640104" type="catHeadBody">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-23" name="Move at angle" sid="866986973661935" type="deathFromAbove">
+                                <action id="-23" name="Move at angle" sid="866986973661935" type="catHeadBody">
                                     <param id="0" name="Angle">90</param>
                                     <param id="1" name="Distance">1.5</param>
                                 </action>
@@ -352,12 +352,12 @@
                         <comment>Death from above.</comment>
                         <event-block sid="921477721861557">
                             <conditions>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="696692656403527" type="deathFromAbove">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="696692656403527" type="catHeadBody">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-23" name="Move at angle" sid="105951091971812" type="deathFromAbove">
+                                <action id="-23" name="Move at angle" sid="105951091971812" type="catHeadBody">
                                     <param id="0" name="Angle">90</param>
                                     <param id="1" name="Distance">0</param>
                                 </action>

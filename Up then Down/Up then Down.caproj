@@ -266,23 +266,23 @@
             </object-type>
         </object-folder>
         <object-folder name="hazards">
-            <object-type name="deathFromAbove" sid="668190471515479">
+            <object-type name="catHeadBody" sid="668190471515479">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="moving" sid="645563122462762" type="boolean" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821632053730471" speed="5">
-                        <frame duration="1" hotspotX="0.502381" hotspotY="0.751111" original-source="C:\Users\GJ Lee\Desktop\cathead.png">
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.814286" original-source="C:\Users\GJ Lee\Desktop\catBody.png">
                             <collision-poly>
-                                <point x="0.00675677" y="0.324176" />
-                                <point x="0.503378" y="0.00549451" />
-                                <point x="0.993243" y="0.335165" />
-                                <point x="0.945946" y="0.5" />
-                                <point x="0.918919" y="0.543956" />
-                                <point x="0.503378" y="0.994505" />
-                                <point x="0.0844595" y="0.549451" />
-                                <point x="0.0540541" y="0.5" />
+                                <point x="0" y="0.349549" />
+                                <point x="0.501844" y="0.00241366" />
+                                <point x="0.999485" y="0.361519" />
+                                <point x="0.951437" y="0.541071" />
+                                <point x="0.923981" y="0.588952" />
+                                <point x="0.501844" y="1" />
+                                <point x="0.0762763" y="0.594938" />
+                                <point x="0.0453883" y="0.541071" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -304,6 +304,11 @@
                 <instance-variables>
                     <instance-variable name="moving" sid="819209693460228" type="boolean" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Sine" sid="535956134437802">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734894084785580" speed="5">
                         <frame duration="1" hotspotX="0.496" hotspotY="0.501266" original-source="C:\Users\GJ Lee\Desktop\catpaw.png">
@@ -336,6 +341,11 @@
                 <instance-variables>
                     <instance-variable name="moving" sid="762642100290066" type="boolean" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Sine" sid="218115875766919">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578463807851829" speed="5">
                         <frame duration="1" hotspotX="0.504" hotspotY="0.501266" original-source="C:\Users\GJ Lee\Desktop\catpaw.png" />
@@ -497,6 +507,9 @@
                     <behavior-type name="Wrap" sid="997895911959586">
                         <behavior id="wrap" />
                     </behavior-type>
+                    <behavior-type name="Sine" sid="143243163549874">
+                        <behavior id="Sin" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="888354409032471" speed="0">
@@ -522,6 +535,36 @@
             <object-type name="floorGoal" sid="327784184858528">
                 <plugin id="TiledBg" />
                 <texture />
+            </object-type>
+            <object-type name="acornBubble" sid="339269590542707">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="dangerous" sid="316551998004939" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Wrap" sid="976392665579642">
+                        <behavior id="wrap" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="844063496266759">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621886994400137" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\bubble0.png">
+                            <collision-poly>
+                                <point x="0.196429" y="0.166667" />
+                                <point x="0.5" y="0" />
+                                <point x="0.803571" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.839286" y="0.863636" />
+                                <point x="0.5" y="1" />
+                                <point x="0.160714" y="0.863636" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="platforms">
@@ -683,6 +726,116 @@
         <object-type name="TiledBackground" sid="680494689812056">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\GJ Lee\Desktop\bg_gradient.png" />
+        </object-type>
+        <object-type name="catEarLeft" sid="493496265449298">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="449434244478415">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="541887463287997">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232687450748180" speed="5">
+                    <frame duration="1" hotspotX="0.830769" hotspotY="0.676056" original-source="C:\Users\GJ Lee\Desktop\catEar.png">
+                        <collision-poly>
+                            <point x="0.138462" y="0.126761" />
+                            <point x="0.492308" y="0.0422535" />
+                            <point x="0.969231" y="0.028169" />
+                            <point x="0.953846" y="0.492958" />
+                            <point x="0.784615" y="0.802817" />
+                            <point x="0.492308" y="0.915493" />
+                            <point x="0.2" y="0.816901" />
+                            <point x="0.0461538" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="catEarRight" sid="232997305626826">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="642408388920068">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="151601327382632">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902491381388476" speed="5">
+                    <frame duration="1" hotspotX="0.107692" hotspotY="0.676056" original-source="C:\Users\GJ Lee\Desktop\catEar.png">
+                        <collision-poly>
+                            <point x="0.953846" y="0.492958" />
+                            <point x="0.8" y="0.816901" />
+                            <point x="0.507692" y="0.915493" />
+                            <point x="0.215385" y="0.802817" />
+                            <point x="0.046154" y="0.492958" />
+                            <point x="0.030769" y="0.028169" />
+                            <point x="0.507692" y="0.0422535" />
+                            <point x="0.861538" y="0.126761" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="catEyeLeft" sid="871677307015357">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="399546153671991">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525500205324320" speed="5">
+                    <frame duration="5" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catEye.png" />
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\eyeClosed.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="catEyeRight" sid="943714775729135">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="696952041269552">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281055748624351" speed="5">
+                    <frame duration="5" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catEye.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\eyeClosed.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="catMouth" sid="153619412272271">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="400079037289885">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="272367360518910" speed="5">
+                    <frame duration="3" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catMouth0.png" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catMouth1.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>

@@ -72,8 +72,15 @@
         <event-group description="" sid="794595755082198" title="Collectibles">
             <sub-events>
                 <event-block sid="169085012167484">
-                    <conditions />
-                    <actions />
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="576664630273031" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="910809313560831" type="acornBubble">
+                            <param id="0" name="Pin to">ceilingGoal</param>
+                            <param id="1" name="Mode">4</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <comment>space acorns</comment>
                 <event-block sid="500817209081143">
@@ -111,7 +118,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="234420360018151" type="deathFromBelow" />
-                        <action id="-13" name="Set boolean" sid="144158032720287" type="deathFromAbove">
+                        <action id="-13" name="Set boolean" sid="144158032720287" type="catHeadBody">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -238,11 +245,34 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="444048775333954" title="Platforms5">
+        <event-group description="" sid="444048775333954" title="Cat face">
             <sub-events>
                 <event-block sid="120127458123134">
-                    <conditions />
-                    <actions />
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="280944805493930" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="456887524272786" type="catEarLeft">
+                            <param id="0" name="Pin to">catHeadBody</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="949170108907488" type="catEarRight">
+                            <param id="0" name="Pin to">catHeadBody</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="957334660377405" type="catEyeLeft">
+                            <param id="0" name="Pin to">catHeadBody</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="982020328794423" type="catEyeRight">
+                            <param id="0" name="Pin to">catHeadBody</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="670177308915076" type="catMouth">
+                            <param id="0" name="Pin to">catHeadBody</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="586554326770260">
                     <conditions />
