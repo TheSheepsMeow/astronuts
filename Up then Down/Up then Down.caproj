@@ -2,7 +2,7 @@
 <c2project>
     <name>Up then Down</name>
     <description></description>
-    <version>0.4</version>
+    <version>0.5</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -570,6 +570,9 @@
                     <behavior-type name="Solid" sid="938280321737118">
                         <behavior id="solid" />
                     </behavior-type>
+                    <behavior-type name="Sine" sid="474010129395895">
+                        <behavior id="Sin" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="122175912537841" speed="5">
@@ -592,6 +595,9 @@
                 <behaviors>
                     <behavior-type name="Solid" sid="349056449344799">
                         <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Platform" sid="377068135973661">
+                        <behavior id="Platform" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -691,9 +697,12 @@
         <layout>Master Level.xml</layout>
         <layout>Loader.xml</layout>
         <layout>Title.xml</layout>
+        <layout>1.xml</layout>
+        <layout>2.xml</layout>
         <layout>3.xml</layout>
         <layout>4.xml</layout>
         <layout>5.xml</layout>
+        <layout>6.xml</layout>
         <layout>Win.xml</layout>
     </layout-folder>
     <event-folder>
