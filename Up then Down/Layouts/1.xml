@@ -31,6 +31,24 @@
             <instances />
             <effects />
         </layer>
+        <layer name="CAT" sid="254590718920630">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
         <layer name="MG" sid="797410486946630">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -81,8 +99,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>48</x>
-                        <y>1760</y>
+                        <x>34</x>
+                        <y>1745</y>
                         <z>0</z>
                         <width>41.352146149</width>
                         <height>41.352146149</height>
@@ -112,7 +130,7 @@
                         <behavior-instance type="Sine">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
+                                <movement>Vertical</movement>
                                 <wave>Sine</wave>
                                 <period>4</period>
                                 <period-random>0</period-random>
@@ -213,111 +231,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="pawLeft" uid="248">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <moving>false</moving>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>21</x>
-                        <y>111</y>
-                        <z>0</z>
-                        <width>83.414093018</width>
-                        <height>263.588531494</height>
-                        <depth>0</depth>
-                        <hotspotX>0.495999992</hotspotX>
-                        <hotspotY>0.501265824</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="pawRight" uid="249">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <moving>false</moving>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>290</x>
-                        <y>110</y>
-                        <z>0</z>
-                        <width>83.414093018</width>
-                        <height>263.588531494</height>
-                        <depth>0</depth>
-                        <hotspotX>0.504000008</hotspotX>
-                        <hotspotY>0.501265824</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="catHeadBody" uid="250">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <moving>false</moving>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>159</x>
-                        <y>65</y>
-                        <z>0</z>
-                        <width>354.521148682</width>
-                        <height>315.12991333</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501587331</hotspotX>
-                        <hotspotY>0.814285696</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

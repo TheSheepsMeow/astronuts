@@ -254,6 +254,55 @@
                         <condition id="-2" name="On start of layout" sid="280944805493930" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-3" name="Create object" sid="629641151873122" type="System">
+                            <param id="0" name="Object to create">catHeadBody</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="X">160</param>
+                            <param id="3" name="Y">103</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="649971534865441" type="catHeadBody">
+                            <param id="0" name="Width">385</param>
+                            <param id="1" name="Height">342</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="897420877275537" type="System">
+                            <param id="0" name="Object to create">pawLeft</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="X">20</param>
+                            <param id="3" name="Y">75</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="233815641155439" type="pawLeft" />
+                        <action id="-3" name="Create object" sid="914753881619668" type="System">
+                            <param id="0" name="Object to create">pawRight</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="X">297</param>
+                            <param id="3" name="Y">75</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="455205552529985" type="pawRight" />
+                        <action id="0" name="Spawn another object" sid="689446929528539" type="catHeadBody">
+                            <param id="0" name="Object">catEarLeft</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="907095689183861" type="catHeadBody">
+                            <param id="0" name="Object">catEarRight</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="848825293779957" type="catHeadBody">
+                            <param id="0" name="Object">catEyeLeft</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="482928203387615" type="catHeadBody">
+                            <param id="0" name="Object">catEyeRight</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="Image point">4</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="873747956296126" type="catHeadBody">
+                            <param id="0" name="Object">catMouth</param>
+                            <param id="1" name="Layer">&quot;CAT&quot;</param>
+                            <param id="2" name="Image point">5</param>
+                        </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="456887524272786" type="catEarLeft">
                             <param id="0" name="Pin to">catHeadBody</param>
                             <param id="1" name="Mode">1</param>
