@@ -842,6 +842,15 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SpaceCloudPlatform" sid="747989808477547">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="484507081817658">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Spacecloudtest.png" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Collectibles" plugin-id="Sprite" sid="526221290032440">
