@@ -198,7 +198,7 @@
                                 <max-fall-speed>400</max-fall-speed>
                                 <double-jump>Enabled</double-jump>
                                 <jump-sustain>0</jump-sustain>
-                                <default-controls>Yes</default-controls>
+                                <default-controls>No</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
