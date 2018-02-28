@@ -42,7 +42,7 @@
                             <param id="0" name="Seconds">0.1</param>
                         </action>
                         <action id="-3" name="Create object" sid="692403108353755" type="System">
-                            <param id="0" name="Object to create">platform</param>
+                            <param id="0" name="Object to create">MetalPlatform</param>
                             <param id="1" name="Layer">player.LayerName</param>
                             <param id="2" name="X">collectForPlatform.X</param>
                             <param id="3" name="Y">collectForPlatform.Y+25</param>

@@ -674,6 +674,29 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="SpaceCloudPlatform" sid="747989808477547">
+                <plugin id="NinePatch" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="484507081817658">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Spacecloudtest.png" />
+            </object-type>
+            <object-type name="MetalPlatform" sid="965519786624442">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="560223039634909">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425717472526669" speed="6">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Extended platform1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Extended platform5.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="background">
             <object-type name="bg_clouds" sid="164964187728265">
@@ -852,15 +875,6 @@
                     <frame duration="1" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catMouth1.png" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="SpaceCloudPlatform" sid="747989808477547">
-            <plugin id="NinePatch" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="484507081817658">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Spacecloudtest.png" />
         </object-type>
     </object-folder>
     <families>
