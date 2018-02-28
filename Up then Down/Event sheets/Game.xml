@@ -221,10 +221,6 @@
         </event-group>
         <event-group description="" sid="901494045263555" title="Game">
             <sub-events>
-                <event-block sid="304183569645009">
-                    <conditions />
-                    <actions />
-                </event-block>
                 <event-block sid="360440143110148">
                     <conditions />
                     <actions />

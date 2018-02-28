@@ -82,6 +82,21 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="889869210982966">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="611647344280608" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="667634657300923" type="collectSpaceAcorn">
+                            <param id="0" name="Object">acornBubble</param>
+                            <param id="1" name="Layer">collectSpaceAcorn.LayerNumber</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="542821374400784" type="acornBubble">
+                            <param id="0" name="Scale">0.85</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>space acorns</comment>
                 <event-block sid="500817209081143">
                     <conditions>
