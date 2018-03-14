@@ -60,8 +60,16 @@
                     </actions>
                 </event-block>
                 <event-block sid="104275307714491">
-                    <conditions />
-                    <actions />
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="787974250388682" type="player">
+                            <param id="0" name="Object">MetalPlatform</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="438823206174561" type="player">
+                            <param id="0" name="Y">player.Y-15</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="108745872024127">
                     <conditions />
