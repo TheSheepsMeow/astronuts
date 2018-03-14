@@ -458,6 +458,12 @@
                     <animation framecount="1" loop="0" name="Death" pingpong="0" repeatcount="1" repeatto="0" sid="641557582354543" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Squirrel-Death.png" />
                     </animation>
+                    <animation framecount="4" loop="1" name="Win" pingpong="1" repeatcount="1" repeatto="0" sid="871439389982415" speed="8">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501754" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\SquirrelWin1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501754" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\SquirrelWin2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501754" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\SquirrelWin3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501754" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\SquirrelWin4.png" />
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="deathParticle" sid="413178623397159">
@@ -597,7 +603,7 @@
                         <behavior id="jumpthru" />
                     </behavior-type>
                 </behaviors>
-                <texture />
+                <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Basic Platform.png" />
             </object-type>
             <object-type name="platformJumpThru" sid="858994209014515">
                 <plugin id="TiledBg" />
