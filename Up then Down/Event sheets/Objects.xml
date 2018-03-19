@@ -129,7 +129,16 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="777928594919113" type="collectSpaceAcorn" />
-                        <action id="-9" name="Destroy" sid="221719675099129" type="acornBubble" />
+                    </actions>
+                </event-block>
+                <event-block sid="461261926484805">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="460925052650025" type="player">
+                            <param id="0" name="Object">acornBubble</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="551846447832188" type="acornBubble" />
                     </actions>
                 </event-block>
                 <comment>golden acorn</comment>
