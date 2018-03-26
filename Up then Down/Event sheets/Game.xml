@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
+        <variable constant="0" name="levelTimer" sid="544239523588259" static="0" type="number">0</variable>
         <include>Hazards</include>
         <include>Objects</include>
         <include>Player</include>
@@ -236,7 +237,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-43" name="Go to next/previous layout" sid="901524010582596" type="System">
+                        <action id="-4" name="Set layer visible" sid="682460962480403" type="System">
+                            <param id="0" name="Layer">&quot;Result&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action disabled="1" id="-43" name="Go to next/previous layout" sid="901524010582596" type="System">
                             <param id="0" name="Which">0</param>
                         </action>
                     </actions>
@@ -308,6 +313,125 @@
                     <actions />
                 </event-block>
                 <event-block sid="149878441058575">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="390189548995968" title="Result Menu">
+            <sub-events>
+                <event-block sid="292118097641583">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="513488878080029">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="742330144409197" type="System">
+                            <param id="0" name="Layer">&quot;Result&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="111641450945106">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="846553761917533" type="Touch">
+                                    <param id="0" name="Object">resultButtonNextLevel</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-43" name="Go to next/previous layout" sid="124515963066995" type="System">
+                                    <param id="0" name="Which">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="158750134096173">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="826050852978395" type="Touch">
+                                    <param id="0" name="Object">resultButtonMenu</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="563258457641390" type="System">
+                                    <param id="0" name="Layout">Title</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment></comment>
+                        <event-block sid="344311918170714">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="340109151731071" type="resultText">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="230807863996593" type="resultText">
+                                    <param id="0" name="Text">&quot;Level &quot; &amp; LayoutName &amp; &quot; complete!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962989243602816">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="507202680896233" type="resultText">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="117698265021514" type="resultText">
+                                    <param id="0" name="Text">&quot;Time: &quot; &amp; levelTimer &amp; &quot; sec&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="825003809864914">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="238166182568269" type="resultSpaceAcorn">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="425623662553050" type="resultSpaceAcorn">
+                                    <param id="0" name="Animation">&quot;Gottem&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="228405591721482">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                        <event-block sid="180578575274190">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                        <event-block sid="132727880754168">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="473421959017362">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="493508333177125">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="398238592780298" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="886718035894006" type="System">
+                            <param id="0" name="Variable">levelTimer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="479411830889796">
                     <conditions />
                     <actions />
                 </event-block>
