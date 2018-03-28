@@ -6,192 +6,174 @@
         <event-group description="" sid="643672290292086" title="Controls">
             <sub-events>
                 <variable constant="0" name="xVector" sid="660527691416047" static="0" type="number">250</variable>
-                <comment>If left side of the player is tapped, the player moves to the left.</comment>
-                <event-block sid="385680320139860">
+                <event-block sid="750695696428142">
                     <conditions>
-                        <condition id="0" name="On any touch start" sid="852454483775380" type="Touch" />
-                        <condition disabled="1" id="-8" name="Compare two values" sid="714709561976341" type="System">
-                            <param id="0" name="First value">touch.X</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">LayoutWidth/2</param>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="633565976951005" type="System">
+                            <param id="0" name="Layer">&quot;Result&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="701794450549548" type="player">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="670524209176650" type="player">
-                            <param id="0" name="Vector X">-xVector</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="316660931810680">
+                        <comment>If left side of the player is tapped, the player moves to the left.</comment>
+                        <event-block sid="385680320139860">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="760567903963871" type="System">
-                                    <param id="0" name="First value">touch.X</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">player.X</param>
-                                </condition>
-                                <condition disabled="1" id="-8" name="Compare two values" sid="145324955953705" type="System">
-                                    <param id="0" name="First value">touch.X</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">LayoutWidth/2</param>
-                                </condition>
+                                <condition id="0" name="On any touch start" sid="852454483775380" type="Touch" />
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="310334557266916" type="player">
+                                <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="701794450549548" type="player">
                                     <param id="0" name="Control">2</param>
                                 </action>
-                                <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="727549877186161" type="player">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="204734404114900" type="playerAnimations">
-                                    <param id="0" name="State">0</param>
+                                <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="670524209176650" type="player">
+                                    <param id="0" name="Vector X">-xVector</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="672959387395239">
+                                <event-block sid="316660931810680">
                                     <conditions>
-                                        <condition behavior="Platform" id="2" name="Is on floor" sid="184178213115699" type="player" />
+                                        <condition id="-8" name="Compare two values" sid="760567903963871" type="System">
+                                            <param id="0" name="First value">touch.X</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">player.X</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="839236017283479" type="player">
-                                            <param id="0" name="Vector X">-xVector</param>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="310334557266916" type="player">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                        <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="727549877186161" type="player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="204734404114900" type="playerAnimations">
+                                            <param id="0" name="State">0</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="672959387395239">
+                                            <conditions>
+                                                <condition behavior="Platform" id="2" name="Is on floor" sid="184178213115699" type="player" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="839236017283479" type="player">
+                                                    <param id="0" name="Vector X">-xVector</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>If right side of the player is tapped, the player moves to the right.</comment>
-                <event-block sid="707390397282288">
-                    <conditions>
-                        <condition id="0" name="On any touch start" sid="570348678111332" type="Touch" />
-                        <condition disabled="1" id="-8" name="Compare two values" sid="590355936875631" type="System">
-                            <param id="0" name="First value">Touch.X</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">LayoutWidth/2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="398737137750259" type="player">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="501176253638139" type="player">
-                            <param id="0" name="Vector X">xVector</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="707887189230449">
+                        <comment>If right side of the player is tapped, the player moves to the right.</comment>
+                        <event-block sid="707390397282288">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="267377421580698" type="System">
-                                    <param id="0" name="First value">Touch.X</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Second value">player.X</param>
-                                </condition>
-                                <condition disabled="1" id="-8" name="Compare two values" sid="806808493574218" type="System">
-                                    <param id="0" name="First value">Touch.X</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Second value">LayoutWidth/2</param>
-                                </condition>
+                                <condition id="0" name="On any touch start" sid="570348678111332" type="Touch" />
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="400018692147109" type="player">
+                                <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="398737137750259" type="player">
                                     <param id="0" name="Control">2</param>
                                 </action>
-                                <action id="7" name="Set mirrored" sid="129307513244576" type="playerAnimations">
-                                    <param id="0" name="State">1</param>
+                                <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="501176253638139" type="player">
+                                    <param id="0" name="Vector X">xVector</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="434383275907561">
+                                <event-block sid="707887189230449">
                                     <conditions>
-                                        <condition behavior="Platform" id="2" name="Is on floor" sid="648322355547537" type="player" />
+                                        <condition id="-8" name="Compare two values" sid="267377421580698" type="System">
+                                            <param id="0" name="First value">Touch.X</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">player.X</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="696473230235966" type="player">
-                                            <param id="0" name="Vector X">xVector</param>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="400018692147109" type="player">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="129307513244576" type="playerAnimations">
+                                            <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="434383275907561">
+                                            <conditions>
+                                                <condition behavior="Platform" id="2" name="Is on floor" sid="648322355547537" type="player" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="696473230235966" type="player">
+                                                    <param id="0" name="Vector X">xVector</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="210294595323809">
+                                    <conditions>
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="332423394025304" type="Audio">
+                                            <param id="0" name="Tag">&quot;jump&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="210294595323809">
-                            <conditions>
-                                <condition id="5" inverted="1" name="Is tag playing" sid="332423394025304" type="Audio">
-                                    <param id="0" name="Tag">&quot;jump&quot;</param>
-                                </condition>
-                            </conditions>
+                        <event-block sid="889618618395471">
+                            <conditions />
                             <actions />
                         </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="889618618395471">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="157584846016731">
-                    <conditions>
-                        <condition behavior="Platform" id="5" name="On jump" sid="307253740009635" type="player" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="754168802527581" type="Audio">
-                            <param id="0" name="Audio file">Jump 10</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;jump&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="678274544659935">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="310415724565478">
-                    <conditions>
-                        <condition id="2" name="Is in touch" sid="310827969122491" type="Touch" />
-                        <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="753064898002732" type="player" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="238763943386373">
+                        <comment></comment>
+                        <event-block sid="157584846016731">
                             <conditions>
-                                <condition disabled="1" id="-8" name="Compare two values" sid="749089027366025" type="System">
-                                    <param id="0" name="First value">touch.X</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">LayoutWidth/2</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="667338878188151" type="System">
-                                    <param id="0" name="First value">touch.X</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">player.X - 10</param>
-                                </condition>
+                                <condition behavior="Platform" id="5" name="On jump" sid="307253740009635" type="player" />
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="234023208036643" type="player">
-                                    <param id="0" name="Control">0</param>
+                                <action id="0" name="Play" sid="754168802527581" type="Audio">
+                                    <param id="0" name="Audio file">Jump 10</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;jump&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="279681202657599">
+                        <comment></comment>
+                        <event-block sid="310415724565478">
                             <conditions>
-                                <condition disabled="1" id="-8" name="Compare two values" sid="700557081675945" type="System">
-                                    <param id="0" name="First value">Touch.X</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Second value">LayoutWidth/2</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="841227858462340" type="System">
-                                    <param id="0" name="First value">Touch.X</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Second value">player.X + 10</param>
-                                </condition>
+                                <condition id="2" name="Is in touch" sid="310827969122491" type="Touch" />
+                                <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="753064898002732" type="player" />
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="384697784148265" type="player">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="238763943386373">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="667338878188151" type="System">
+                                            <param id="0" name="First value">touch.X</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">player.X - 10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="234023208036643" type="player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="279681202657599">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="841227858462340" type="System">
+                                            <param id="0" name="First value">Touch.X</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">player.X + 10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="384697784148265" type="player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="887492078531715">
+                            <conditions />
+                            <actions />
                         </event-block>
                     </sub-events>
                 </event-block>

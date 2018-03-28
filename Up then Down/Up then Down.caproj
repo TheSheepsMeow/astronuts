@@ -2,7 +2,7 @@
 <c2project>
     <name>Up then Down</name>
     <description></description>
-    <version>0.7</version>
+    <version>0.8</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -25,6 +25,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
@@ -244,99 +245,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="resultBG" sid="121505583257838">
-                <plugin id="TiledBg" />
-                <texture />
-            </object-type>
-            <object-type name="resultButtonNextLevel" sid="238717529547075">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653158972020965" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\mute.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="resultButtonMenu" sid="396677686022839">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583166541687406" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\mute.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="resultSpaceAcorn" sid="268082070012687">
-                <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="id" sid="712714109458916" type="number" />
-                </instance-variables>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315472787750786" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\normalAcorn.png">
-                            <collision-poly>
-                                <point x="0.232143" y="0.19697" />
-                                <point x="0.5" y="0.030303" />
-                                <point x="0.785714" y="0.181818" />
-                                <point x="0.964286" y="0.5" />
-                                <point x="0.803571" y="0.833333" />
-                                <point x="0.5" y="0.969697" />
-                                <point x="0.196429" y="0.833333" />
-                                <point x="0.0535714" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="Gottem" pingpong="0" repeatcount="1" repeatto="0" sid="276076642656652" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="0.232143" y="0.19697" />
-                                <point x="0.5" y="0.030303" />
-                                <point x="0.785714" y="0.181818" />
-                                <point x="0.964286" y="0.5" />
-                                <point x="0.803571" y="0.833333" />
-                                <point x="0.5" y="0.969697" />
-                                <point x="0.196429" y="0.833333" />
-                                <point x="0.0535714" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="resultGoldenAcorn" sid="651385711360215">
-                <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="dangerous" sid="218617574962991" type="boolean" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="Wrap" sid="705945200345497">
-                        <behavior id="wrap" />
-                    </behavior-type>
-                    <behavior-type name="Sine" sid="405074192908250">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790115997820559" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\spaceco.png">
-                            <collision-poly>
-                                <point x="0.196429" y="0.166667" />
-                                <point x="0.5" y="0" />
-                                <point x="0.803571" y="0.166667" />
-                                <point x="1" y="0.5" />
-                                <point x="0.839286" y="0.863636" />
-                                <point x="0.5" y="1" />
-                                <point x="0.160714" y="0.863636" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="resultText" sid="694658499768611">
-                <plugin id="Spritefont2" />
-                <instance-variables>
-                    <instance-variable name="id" sid="491044109510434" type="number" />
-                </instance-variables>
-                <texture />
-            </object-type>
         </object-folder>
         <object-folder name="system">
             <object-type name="Audio" sid="536628271972109">
@@ -364,6 +272,14 @@
                 <instance-variables>
                     <instance-variable name="moving" sid="645563122462762" type="boolean" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Physics" sid="545921376292532">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="340327338932688">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821632053730471" speed="5">
                         <frame duration="1" hotspotX="0.501587" hotspotY="0.814286" original-source="C:\Users\GJ Lee\Desktop\catBody.png">
@@ -373,14 +289,13 @@
                             <image-point name="eyeR" x="0.736508" y="0.721429" />
                             <image-point name="mouth" x="0.495238" y="0.95" />
                             <collision-poly>
-                                <point x="0" y="0.349549" />
-                                <point x="0.501844" y="0.00241366" />
-                                <point x="0.999485" y="0.361519" />
-                                <point x="0.951437" y="0.541071" />
-                                <point x="0.923981" y="0.588952" />
-                                <point x="0.501844" y="1" />
-                                <point x="0.0762763" y="0.594938" />
-                                <point x="0.0453883" y="0.541071" />
+                                <point x="0.047619" y="0.0535714" />
+                                <point x="0.965079" y="0.0392857" />
+                                <point x="0.965079" y="0.5" />
+                                <point x="0.844444" y="0.825" />
+                                <point x="0.498413" y="0.992857" />
+                                <point x="0.152381" y="0.828571" />
+                                <point x="0.031746" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -650,6 +565,11 @@
             </object-type>
             <object-type name="floorGoal" sid="327784184858528">
                 <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="178532371411261">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <texture />
             </object-type>
             <object-type name="acornBubble" sid="339269590542707">
@@ -690,11 +610,8 @@
                     <behavior-type name="Solid" sid="915771958588575">
                         <behavior id="solid" />
                     </behavior-type>
-                    <behavior-type name="Fade" sid="984279053092653">
-                        <behavior id="Fade" />
-                    </behavior-type>
-                    <behavior-type name="Jumpthru" sid="806387820783101">
-                        <behavior id="jumpthru" />
+                    <behavior-type name="Physics" sid="710004861501233">
+                        <behavior id="Physics" />
                     </behavior-type>
                 </behaviors>
                 <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Basic Platform.png" />
@@ -780,6 +697,9 @@
                     <behavior-type name="Jumpthru" sid="484507081817658">
                         <behavior id="jumpthru" />
                     </behavior-type>
+                    <behavior-type name="Physics" sid="368195744854505">
+                        <behavior id="Physics" />
+                    </behavior-type>
                 </behaviors>
                 <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Spacecloudtest.png" />
             </object-type>
@@ -788,6 +708,9 @@
                 <behaviors>
                     <behavior-type name="Solid" sid="560223039634909">
                         <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="599383127653370">
+                        <behavior id="Physics" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -832,6 +755,177 @@
                                 <point x="0.5" y="0.857143" />
                                 <point x="0.285714" y="0.714286" />
                                 <point x="0.142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="menu result">
+            <object-type name="resultBG" sid="121505583257838">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="resultButtonNextLevel" sid="238717529547075">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="565282025956446">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="692417052029037">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653158972020965" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Play-Button.png">
+                            <collision-poly>
+                                <point x="0.148438" y="0.148438" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Play-Button1.png">
+                            <collision-poly>
+                                <point x="0.148438" y="0.148438" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="775823309976563" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Play-Button-Pressed.png">
+                            <collision-poly>
+                                <point x="0.148438" y="0.148438" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="resultGoldenAcorn" sid="651385711360215">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="dangerous" sid="218617574962991" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Wrap" sid="705945200345497">
+                        <behavior id="wrap" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="405074192908250">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790115997820559" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\spaceco.png">
+                            <collision-poly>
+                                <point x="0.196429" y="0.166667" />
+                                <point x="0.5" y="0" />
+                                <point x="0.803571" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.839286" y="0.863636" />
+                                <point x="0.5" y="1" />
+                                <point x="0.160714" y="0.863636" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="resultSpaceAcorn" sid="268082070012687">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="id" sid="712714109458916" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315472787750786" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\normalAcorn.png">
+                            <collision-poly>
+                                <point x="0.232143" y="0.19697" />
+                                <point x="0.5" y="0.030303" />
+                                <point x="0.785714" y="0.181818" />
+                                <point x="0.964286" y="0.5" />
+                                <point x="0.803571" y="0.833333" />
+                                <point x="0.5" y="0.969697" />
+                                <point x="0.196429" y="0.833333" />
+                                <point x="0.0535714" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Gottem" pingpong="0" repeatcount="1" repeatto="0" sid="276076642656652" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.232143" y="0.19697" />
+                                <point x="0.5" y="0.030303" />
+                                <point x="0.785714" y="0.181818" />
+                                <point x="0.964286" y="0.5" />
+                                <point x="0.803571" y="0.833333" />
+                                <point x="0.5" y="0.969697" />
+                                <point x="0.196429" y="0.833333" />
+                                <point x="0.0535714" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="resultText" sid="694658499768611">
+                <plugin id="Spritefont2" />
+                <instance-variables>
+                    <instance-variable name="id" sid="491044109510434" type="number" />
+                </instance-variables>
+                <texture />
+            </object-type>
+            <object-type name="resultButtonMenu" sid="396677686022839">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583166541687406" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Menu--Button1.png">
+                            <collision-poly>
+                                <point x="0.078125" y="0.078125" />
+                                <point x="0.921875" y="0.078125" />
+                                <point x="0.984375" y="0.5" />
+                                <point x="0.929688" y="0.929688" />
+                                <point x="0.0703125" y="0.929688" />
+                                <point x="0.015625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Menu--Button.png">
+                            <collision-poly>
+                                <point x="0.078125" y="0.078125" />
+                                <point x="0.921875" y="0.078125" />
+                                <point x="0.984375" y="0.5" />
+                                <point x="0.929688" y="0.929688" />
+                                <point x="0.0703125" y="0.929688" />
+                                <point x="0.015625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="192263360908094" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Menu--Button-Pressed.png">
+                            <collision-poly>
+                                <point x="0.078125" y="0.078125" />
+                                <point x="0.921875" y="0.078125" />
+                                <point x="0.984375" y="0.5" />
+                                <point x="0.929688" y="0.929688" />
+                                <point x="0.0703125" y="0.929688" />
+                                <point x="0.015625" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
