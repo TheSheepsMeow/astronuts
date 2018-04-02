@@ -378,7 +378,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
                             <collision-poly>
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
@@ -387,9 +387,11 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="557595642048812" speed="10">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="4" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="557595642048812" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\bouncy0.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\bouncy1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\bouncy2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\bouncy3.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -632,11 +634,12 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617249426721472" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\bouncy0.png" />
                     </animation>
-                    <animation framecount="2" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="619088638866564" speed="10">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="3" loop="0" name="Bounce" pingpong="0" repeatcount="2" repeatto="0" sid="619088638866564" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\bouncy1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\bouncy2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\bouncy3.png" />
                     </animation>
                 </animation-folder>
             </object-type>
