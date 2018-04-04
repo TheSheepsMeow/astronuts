@@ -282,6 +282,9 @@
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="302782694612898" type="deathFromBelow">
+                            <param id="0" name="State">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
