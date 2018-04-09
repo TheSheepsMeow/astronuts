@@ -2,7 +2,7 @@
 <c2project>
     <name>Up then Down</name>
     <description></description>
-    <version>0.8</version>
+    <version>0.9</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -24,7 +24,6 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -629,18 +628,6 @@
                     </behavior-type>
                 </behaviors>
                 <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Basic Platform.png" />
-            </object-type>
-            <object-type name="platformJumpThru" sid="858994209014515">
-                <plugin id="TiledBg" />
-                <behaviors>
-                    <behavior-type name="Fade" sid="515375596081628">
-                        <behavior id="Fade" />
-                    </behavior-type>
-                    <behavior-type name="Jumpthru" sid="491716166365195">
-                        <behavior id="jumpthru" />
-                    </behavior-type>
-                </behaviors>
-                <texture />
             </object-type>
             <object-type name="trampoline" sid="696090724923364">
                 <plugin id="Sprite" />

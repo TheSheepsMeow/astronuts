@@ -10,7 +10,7 @@
                 <event-block sid="816310409103254">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="451560857868065" type="player">
-                            <param id="0" name="Object">platformJumpThru</param>
+                            <param id="0" name="Object">SpaceCloudPlatform</param>
                         </condition>
                     </conditions>
                     <actions>
