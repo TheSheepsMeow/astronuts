@@ -389,7 +389,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="5">
-                        <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
+                        <frame duration="1" hotspotX="0.50289" hotspotY="0.502959" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
                             <collision-poly>
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
@@ -417,16 +417,15 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791728893674967" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791728893674967" speed="5">
+                        <frame duration="1" hotspotX="0.489011" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27 copy.png" />
+                        <frame duration="1" hotspotX="0.486339" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27.png" />
                     </animation>
-                    <animation framecount="3" loop="0" name="Spikey" pingpong="0" repeatcount="1" repeatto="0" sid="319095749414454" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="4" loop="0" name="Spikey" pingpong="0" repeatcount="1" repeatto="0" sid="319095749414454" speed="5">
+                        <frame duration="1" hotspotX="0.486339" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27 copy 2.png" />
+                        <frame duration="0.5" hotspotX="0.489011" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27 copy 3.png" />
+                        <frame duration="0.5" hotspotX="0.489011" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27 copy 4.png" />
+                        <frame duration="1" hotspotX="0.486339" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27 copy 5.png" />
                     </animation>
                 </animation-folder>
             </object-type>
