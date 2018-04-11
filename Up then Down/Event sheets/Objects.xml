@@ -33,7 +33,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="993727587573936" type="Audio">
-                            <param id="0" name="Audio file">Pickup_coin 7</param>
+                            <param id="0" name="Audio file">Platform Appear1</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -114,7 +114,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="662407848341354" type="Audio">
-                            <param id="0" name="Audio file">Pickup_coin 7</param>
+                            <param id="0" name="Audio file">Collect Little Acorn1</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -154,6 +154,13 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="7" name="Play (by name)" sid="175596094573172" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;Collect Big Acorn&quot; &amp; str(choose(1,2))</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="234420360018151" type="deathFromBelow" />
                         <action id="-13" name="Set boolean" sid="144158032720287" type="catHeadBody">
                             <param id="0" name="Instance variable">moving</param>
@@ -168,7 +175,6 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="117055138506064" type="ceilingGoal" />
-                        <action id="-9" name="Destroy" sid="416467618516468" type="acornBubble" />
                         <action behavior="ScrollTo" id="0" name="Shake" sid="363340861260647" type="camera">
                             <param id="0" name="Magnitude">20</param>
                             <param id="1" name="Duration">4</param>
@@ -209,6 +215,12 @@
                             <param id="0" name="Animation">&quot;Bounce&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="602941625725459" type="Audio">
+                            <param id="0" name="Audio file">Jump4</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="298811518464910">
@@ -229,58 +241,6 @@
                     <actions />
                 </event-block>
                 <event-block sid="533104333581223">
-                    <conditions />
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="811923246922504" title="Background">
-            <sub-events>
-                <event-block sid="150081399588712">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="511746467076208" type="System" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="943425303622555">
-                            <conditions>
-                                <condition id="-12" name="Repeat" sid="354785747671162" type="System">
-                                    <param id="0" name="Count">25</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="679169469694936" type="System">
-                                    <param id="0" name="Object to create">star</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="X">random(WindowWidth)</param>
-                                    <param id="3" name="Y">random(0,WindowHeight/2)</param>
-                                </action>
-                                <action id="9" name="Set scale" sid="456974349375512" type="star">
-                                    <param id="0" name="Scale">random(0.5,2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="133297900918327">
-                            <conditions>
-                                <condition id="-12" name="Repeat" sid="896100253354302" type="System">
-                                    <param id="0" name="Count">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="153266580018654" type="System">
-                                    <param id="0" name="Object to create">bg_clouds</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="X">random(WindowWidth)</param>
-                                    <param id="3" name="Y">random(0,WindowHeight*3/4)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="625419525909493" type="bg_clouds">
-                                    <param id="0" name="Angle">random(0, 60)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="116996666019852">
                     <conditions />
                     <actions />
                 </event-block>

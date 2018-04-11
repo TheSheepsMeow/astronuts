@@ -107,7 +107,7 @@
                                 </event-block>
                                 <event-block sid="210294595323809">
                                     <conditions>
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="332423394025304" type="Audio">
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="736091231045226" type="Audio">
                                             <param id="0" name="Tag">&quot;jump&quot;</param>
                                         </condition>
                                     </conditions>
@@ -123,13 +123,33 @@
                         <event-block sid="157584846016731">
                             <conditions>
                                 <condition behavior="Platform" id="5" name="On jump" sid="307253740009635" type="player" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="950811856382156" type="catHeadBody">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="754168802527581" type="Audio">
-                                    <param id="0" name="Audio file">Jump 10</param>
+                                <action id="7" name="Play (by name)" sid="754168802527581" type="Audio">
+                                    <param id="0" name="Folder">0</param>
+                                    <param id="1" name="Audio file name">&quot;Jump&quot; &amp; str(choose(1,2,3))</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">0</param>
+                                    <param id="2" name="Tag (optional)">&quot;jump&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="457486890000441">
+                            <conditions>
+                                <condition behavior="Platform" id="5" name="On jump" sid="812639560716138" type="player" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="325185521858129" type="catHeadBody">
+                                    <param id="0" name="Instance variable">moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="853148002391062" type="Audio">
+                                    <param id="0" name="Audio file">Jump5</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;jump&quot;</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

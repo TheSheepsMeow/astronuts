@@ -2,7 +2,7 @@
 <c2project>
     <name>Up then Down</name>
     <description></description>
-    <version>0.9</version>
+    <version>0.10</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -429,6 +429,116 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="catEarLeft" sid="493496265449298">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="449434244478415">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="541887463287997">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232687450748180" speed="5">
+                        <frame duration="1" hotspotX="0.830769" hotspotY="0.676056" original-source="C:\Users\GJ Lee\Desktop\catEar.png">
+                            <collision-poly>
+                                <point x="0.138462" y="0.126761" />
+                                <point x="0.492308" y="0.0422535" />
+                                <point x="0.969231" y="0.028169" />
+                                <point x="0.953846" y="0.492958" />
+                                <point x="0.784615" y="0.802817" />
+                                <point x="0.492308" y="0.915493" />
+                                <point x="0.2" y="0.816901" />
+                                <point x="0.0461538" y="0.492958" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="catEarRight" sid="232997305626826">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="642408388920068">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="151601327382632">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902491381388476" speed="5">
+                        <frame duration="1" hotspotX="0.107692" hotspotY="0.676056" original-source="C:\Users\GJ Lee\Desktop\catEar.png">
+                            <collision-poly>
+                                <point x="0.953846" y="0.492958" />
+                                <point x="0.8" y="0.816901" />
+                                <point x="0.507692" y="0.915493" />
+                                <point x="0.215385" y="0.802817" />
+                                <point x="0.046154" y="0.492958" />
+                                <point x="0.030769" y="0.028169" />
+                                <point x="0.507692" y="0.0422535" />
+                                <point x="0.861538" y="0.126761" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="catEyeLeft" sid="871677307015357">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="399546153671991">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525500205324320" speed="5">
+                        <frame duration="5" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catEye.png" />
+                        <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\eyeClosed.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="catEyeRight" sid="943714775729135">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="696952041269552">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281055748624351" speed="5">
+                        <frame duration="5" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catEye.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\eyeClosed.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="catMouth" sid="153619412272271">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="400079037289885">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="272367360518910" speed="5">
+                        <frame duration="3" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catMouth0.png" />
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catMouth1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="player">
             <object-type name="player" sid="120260638990951">
@@ -614,6 +724,24 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="floorGoal2" sid="357292914460504">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232603633768437" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\floorGoal.png">
+                            <collision-poly>
+                                <point x="0.297143" y="0.26" />
+                                <point x="0.5" y="0.2475" />
+                                <point x="0.694286" y="0.2675" />
+                                <point x="1" y="0.36" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.3625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="platforms">
             <object-type name="platform" sid="215760698261785">
@@ -744,9 +872,74 @@
             </object-type>
             <object-type name="star" sid="448571890653584">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="748726377559110">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141518506771803" speed="5">
+                    <animation framecount="6" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="141518506771803" speed="5">
+                        <frame duration="1" hotspotX="0.571429" hotspotY="0.571429">
+                            <collision-poly>
+                                <point x="0.285714" y="0.285714" />
+                                <point x="0.5" y="0.142857" />
+                                <point x="0.714286" y="0.285714" />
+                                <point x="0.857143" y="0.5" />
+                                <point x="0.714286" y="0.714286" />
+                                <point x="0.5" y="0.857143" />
+                                <point x="0.285714" y="0.714286" />
+                                <point x="0.142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.571429" hotspotY="0.571429">
+                            <collision-poly>
+                                <point x="0.285714" y="0.285714" />
+                                <point x="0.5" y="0.142857" />
+                                <point x="0.714286" y="0.285714" />
+                                <point x="0.857143" y="0.5" />
+                                <point x="0.714286" y="0.714286" />
+                                <point x="0.5" y="0.857143" />
+                                <point x="0.285714" y="0.714286" />
+                                <point x="0.142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.571429" hotspotY="0.571429">
+                            <collision-poly>
+                                <point x="0.285714" y="0.285714" />
+                                <point x="0.5" y="0.142857" />
+                                <point x="0.714286" y="0.285714" />
+                                <point x="0.857143" y="0.5" />
+                                <point x="0.714286" y="0.714286" />
+                                <point x="0.5" y="0.857143" />
+                                <point x="0.285714" y="0.714286" />
+                                <point x="0.142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.571429" hotspotY="0.571429">
+                            <collision-poly>
+                                <point x="0.285714" y="0.285714" />
+                                <point x="0.5" y="0.142857" />
+                                <point x="0.714286" y="0.285714" />
+                                <point x="0.857143" y="0.5" />
+                                <point x="0.714286" y="0.714286" />
+                                <point x="0.5" y="0.857143" />
+                                <point x="0.285714" y="0.714286" />
+                                <point x="0.142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
                         <frame duration="1" hotspotX="0.571429" hotspotY="0.571429" original-source="C:\Users\GJ Lee\Desktop\bg_star.png">
+                            <collision-poly>
+                                <point x="0.285714" y="0.285714" />
+                                <point x="0.5" y="0.142857" />
+                                <point x="0.714286" y="0.285714" />
+                                <point x="0.857143" y="0.5" />
+                                <point x="0.714286" y="0.714286" />
+                                <point x="0.5" y="0.857143" />
+                                <point x="0.285714" y="0.714286" />
+                                <point x="0.142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.571429" hotspotY="0.571429">
                             <collision-poly>
                                 <point x="0.285714" y="0.285714" />
                                 <point x="0.5" y="0.142857" />
@@ -760,6 +953,10 @@
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="tiledSky" sid="680494689812056">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\GJ Lee\Desktop\bg_gradient.png" />
             </object-type>
         </object-folder>
         <object-folder name="menu result">
@@ -932,6 +1129,133 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="endText" sid="615460440630299">
+                <plugin id="Spritefont2" />
+                <instance-variables>
+                    <instance-variable name="id" sid="368994168041215" type="number" />
+                </instance-variables>
+                <texture />
+            </object-type>
+            <object-type name="BGBadBorder" sid="380056905601632">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287125051007241" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\BG Bad Border.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BGGoodBorder" sid="963378011582213">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341620952574957" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\BG Good Border.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SadAcorn" sid="725825681630114">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="818659452610002">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421852673119225" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\Sad Acorn.png">
+                            <collision-poly>
+                                <point x="0.333333" y="0.441176" />
+                                <point x="0.5" y="0.0735294" />
+                                <point x="0.833333" y="0.220588" />
+                                <point x="0.844444" y="0.5" />
+                                <point x="0.8" y="0.735294" />
+                                <point x="0.5" y="0.941176" />
+                                <point x="0.188889" y="0.75" />
+                                <point x="0.0888889" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RetryButtonPressed" sid="116347489087823">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="185667554878937">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874036543568562" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\Retry-Button.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\Retry-Button1.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.015625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="267873545920265" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.148438" y="0.148438" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="0.992188" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.148438" y="0.851563" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ParticlesSadAcornCloud" sid="375120178179871">
+                <plugin id="Particles" />
+                <texture original-source="C:\Users\admin\Downloads\Sad Acorn Cloud.png" />
+            </object-type>
+            <object-type name="GoldenAcornAura" sid="735153341980296">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Rotate" sid="649139704497721">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="146677512678238">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="317659007481074" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\Golden Acorn Lighter Aura.png">
+                            <collision-poly>
+                                <point x="0.17" y="0.17" />
+                                <point x="0.5" y="0.35" />
+                                <point x="0.855" y="0.145" />
+                                <point x="1" y="0.5" />
+                                <point x="0.5" y="0.645" />
+                                <point x="0.395" y="0.605" />
+                                <point x="0.005" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="developerInfo" sid="694951769311365">
             <plugin id="Text" />
@@ -954,146 +1278,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713829934473333" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground" sid="680494689812056">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\GJ Lee\Desktop\bg_gradient.png" />
-        </object-type>
-        <object-type name="catEarLeft" sid="493496265449298">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="449434244478415">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Pin" sid="541887463287997">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232687450748180" speed="5">
-                    <frame duration="1" hotspotX="0.830769" hotspotY="0.676056" original-source="C:\Users\GJ Lee\Desktop\catEar.png">
-                        <collision-poly>
-                            <point x="0.138462" y="0.126761" />
-                            <point x="0.492308" y="0.0422535" />
-                            <point x="0.969231" y="0.028169" />
-                            <point x="0.953846" y="0.492958" />
-                            <point x="0.784615" y="0.802817" />
-                            <point x="0.492308" y="0.915493" />
-                            <point x="0.2" y="0.816901" />
-                            <point x="0.0461538" y="0.492958" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="catEarRight" sid="232997305626826">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="642408388920068">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Pin" sid="151601327382632">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902491381388476" speed="5">
-                    <frame duration="1" hotspotX="0.107692" hotspotY="0.676056" original-source="C:\Users\GJ Lee\Desktop\catEar.png">
-                        <collision-poly>
-                            <point x="0.953846" y="0.492958" />
-                            <point x="0.8" y="0.816901" />
-                            <point x="0.507692" y="0.915493" />
-                            <point x="0.215385" y="0.802817" />
-                            <point x="0.046154" y="0.492958" />
-                            <point x="0.030769" y="0.028169" />
-                            <point x="0.507692" y="0.0422535" />
-                            <point x="0.861538" y="0.126761" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="catEyeLeft" sid="871677307015357">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="399546153671991">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525500205324320" speed="5">
-                    <frame duration="5" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catEye.png" />
-                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\eyeClosed.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="catEyeRight" sid="943714775729135">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="696952041269552">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281055748624351" speed="5">
-                    <frame duration="5" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catEye.png">
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\eyeClosed.png">
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="catMouth" sid="153619412272271">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="400079037289885">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="272367360518910" speed="5">
-                    <frame duration="3" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catMouth0.png" />
-                    <frame duration="1" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\catMouth1.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="GoldenAcornAura" sid="735153341980296">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Rotate" sid="649139704497721">
-                    <behavior id="Rotate" />
-                </behavior-type>
-                <behavior-type name="Sine" sid="146677512678238">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="317659007481074" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\Golden Acorn Lighter Aura.png">
-                        <collision-poly>
-                            <point x="0.17" y="0.17" />
-                            <point x="0.5" y="0.35" />
-                            <point x="0.855" y="0.145" />
-                            <point x="1" y="0.5" />
-                            <point x="0.5" y="0.645" />
-                            <point x="0.395" y="0.605" />
-                            <point x="0.005" y="0.5" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1130,6 +1314,7 @@
         <event-sheet>Player.xml</event-sheet>
         <event-sheet>Objects.xml</event-sheet>
         <event-sheet>Hazards.xml</event-sheet>
+        <event-sheet>Stars.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="296">
@@ -1173,8 +1358,35 @@
         <file name="Jump 10.ogg" />
         <file name="Pickup_coin 7.m4a" />
         <file name="Pickup_coin 7.ogg" />
+        <file name="Collect Big Acorn1.m4a" />
+        <file name="Collect Big Acorn1.ogg" />
+        <file name="Collect Big Acorn2.m4a" />
+        <file name="Collect Big Acorn2.ogg" />
+        <file name="Collect Little Acorn1.m4a" />
+        <file name="Collect Little Acorn1.ogg" />
+        <file name="Collect Little Acorn2.m4a" />
+        <file name="Collect Little Acorn2.ogg" />
+        <file name="Hit Lava1.m4a" />
+        <file name="Hit Lava1.ogg" />
+        <file name="Hit Lava2.m4a" />
+        <file name="Hit Lava2.ogg" />
+        <file name="Jump1.m4a" />
+        <file name="Jump1.ogg" />
+        <file name="Jump2.m4a" />
+        <file name="Jump2.ogg" />
+        <file name="Jump3.m4a" />
+        <file name="Jump3.ogg" />
+        <file name="Jump4.m4a" />
+        <file name="Jump4.ogg" />
+        <file name="Jump5.m4a" />
+        <file name="Jump5.ogg" />
+        <file name="Platform Appear1.m4a" />
+        <file name="Platform Appear1.ogg" />
     </sounds-folder>
-    <music-folder />
+    <music-folder>
+        <file name="Title Screen Music Edited.m4a" />
+        <file name="Title Screen Music Edited.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
