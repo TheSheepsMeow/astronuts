@@ -1281,6 +1281,65 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="endTree" sid="177933692338014">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="696747587230551">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661909965499621" speed="0">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.965517" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 6endTree.png" />
+                    <frame duration="1" hotspotX="0.537037" hotspotY="0.962025" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 5endTree.png" />
+                    <frame duration="1" hotspotX="0.534483" hotspotY="0.965278" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 4endTree.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.965686" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 3endTree.png" />
+                    <frame duration="1" hotspotX="0.543103" hotspotY="0.964912" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree1.png" />
+                    <frame duration="1" hotspotX="0.536585" hotspotY="0.966667" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree2.png" />
+                    <frame duration="1" hotspotX="0.540373" hotspotY="0.965517" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="endSleepingCat" sid="524156556993018">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="882429773425274">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343732417785427" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.496479" original-source="C:\Users\GJ Lee\Desktop\UTD_sleepingcat.png">
+                        <collision-poly>
+                            <point x="0.171642" y="0.21831" />
+                            <point x="0.507463" y="0.0105634" />
+                            <point x="0.883085" y="0.161972" />
+                            <point x="0.997512" y="0.496479" />
+                            <point x="0.890547" y="0.841549" />
+                            <point x="0.507463" y="0.992958" />
+                            <point x="0.11194" y="0.859155" />
+                            <point x="0.0522388" y="0.496479" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="endSleepingCatTail" sid="405840405477448">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="421664864507243">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="738332668408672">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470641984054024" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502262" original-source="C:\Users\GJ Lee\Desktop\peaceCatTail.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Collectibles" plugin-id="Sprite" sid="526221290032440">
