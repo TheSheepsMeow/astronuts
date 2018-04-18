@@ -265,7 +265,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="920716276148288">
+                <event-block sid="920716276148288">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="244475723740795" type="player">
                             <param id="0" name="Object">floorGoal</param>
@@ -273,15 +273,12 @@
                         <condition id="-8" name="Compare two values" sid="121262884834809" type="System">
                             <param id="0" name="First value">LayoutName</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Level 3&quot;</param>
+                            <param id="2" name="Second value">&quot;Win&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="159631404295335" type="System">
-                            <param id="0" name="Layout">Win</param>
-                        </action>
                         <action id="-16" name="Wait" sid="237034936949017" type="System">
-                            <param id="0" name="Seconds">1.0</param>
+                            <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="748320956207406" type="System">
                             <param id="0" name="Layout">Title</param>

@@ -287,6 +287,11 @@
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="989252384415906" type="deathFromBelow">
                             <param id="0" name="Instance variable">moving</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="691210860204426" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Win&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="ScrollTo" id="0" name="Shake" sid="171010820891045" type="camera">
