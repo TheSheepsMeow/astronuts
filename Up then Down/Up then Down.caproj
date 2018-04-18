@@ -593,6 +593,9 @@
                     <behavior-type name="Pin" sid="198840279241935">
                         <behavior id="Pin" />
                     </behavior-type>
+                    <behavior-type name="Sine" sid="631004733460204">
+                        <behavior id="Sin" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804275623162992" speed="5">
