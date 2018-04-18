@@ -84,12 +84,44 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725177815464689" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\play0.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\play1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Play-Button.png">
+                            <collision-poly>
+                                <point x="0.148438" y="0.148438" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Play-Button1.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
-                    <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="104387726283571" speed="10">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\pressed.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\plressed1.png" />
+                    <animation framecount="1" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="104387726283571" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Play-Button-Pressed.png">
+                            <collision-poly>
+                                <point x="0.148438" y="0.148438" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.851563" y="0.148438" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851563" y="0.851563" />
+                                <point x="0.5" y="0.992188" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -101,21 +133,10 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838950050915455" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\pause.png">
-                            <collision-poly>
-                                <point x="0.171875" y="0.171875" />
-                                <point x="0.5" y="0.03125" />
-                                <point x="0.84375" y="0.15625" />
-                                <point x="1" y="0.5" />
-                                <point x="0.84375" y="0.84375" />
-                                <point x="0.5" y="0.984375" />
-                                <point x="0.171875" y="0.828125" />
-                                <point x="0.046875" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Pawse1.png" />
                     </animation>
                     <animation framecount="1" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="727750453097962" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Pawse2.png">
                             <collision-poly>
                                 <point x="0.171875" y="0.171875" />
                                 <point x="0.5" y="0.03125" />
@@ -134,23 +155,22 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="unmuted" pingpong="0" repeatcount="1" repeatto="0" sid="639706422790771" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\mute.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Unmute-Button.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="muted" pingpong="0" repeatcount="1" repeatto="0" sid="291172181559818" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\mute1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Mute-Button.png" />
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="menuButtonReset" sid="843249760384101">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538844254891279" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\reset.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\reset1.png" />
+                    <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538844254891279" speed="0">
+                        <frame duration="1" hotspotX="0.503226" hotspotY="0.503546" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Reset-Scores1.png" />
                     </animation>
                     <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="621875177566197" speed="10">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\confirm.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\confirm1.png" />
+                        <frame duration="1" hotspotX="0.503226" hotspotY="0.503546" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Reset-Scores2.png" />
+                        <frame duration="1" hotspotX="0.503226" hotspotY="0.503546" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Reset-Scores3.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -190,7 +210,7 @@
             </object-type>
             <object-type name="moregames" sid="206689007778686">
                 <plugin id="NinePatch" />
-                <texture />
+                <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\More-Games.png" />
             </object-type>
             <object-type name="endBG" sid="134682888354773">
                 <plugin id="TiledBg" />
@@ -1337,6 +1357,24 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470641984054024" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502262" original-source="C:\Users\GJ Lee\Desktop\peaceCatTail.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MoreGames2" sid="925835950485690">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="157331777007206" speed="5">
+                    <frame duration="1" hotspotX="0.501493" hotspotY="0.508197" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\More-Games.png">
+                        <collision-poly>
+                            <point x="0.0268657" y="0.0857143" />
+                            <point x="0.498507" y="0.047619" />
+                            <point x="0.973134" y="0.0857143" />
+                            <point x="0.976119" y="0.92381" />
+                            <point x="0.498507" y="0.971429" />
+                            <point x="0.0208955" y="0.933333" />
+                            <point x="0.0119403" y="0.495238" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
