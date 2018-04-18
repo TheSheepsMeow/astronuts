@@ -70,7 +70,7 @@
             </object-type>
             <object-type name="textDebug" sid="181987934528450">
                 <plugin id="Spritefont2" />
-                <texture />
+                <texture original-source="C:\Users\GJ Lee\Desktop\SpriteFont_AnonymousPro_Regular_(28)_[1,1,1,1]_19x31.png" />
             </object-type>
             <object-type name="loaderProgress" sid="229428727829331">
                 <plugin id="NinePatch" />
@@ -127,7 +127,7 @@
             </object-type>
             <object-type name="textTitle" sid="393181214277166">
                 <plugin id="Spritefont2" />
-                <texture />
+                <texture original-source="C:\Users\GJ Lee\Desktop\SpriteFont_AnonymousPro_Regular_(28)_[1,1,1,1]_19x31.png" />
             </object-type>
             <object-type name="menuButtonHome" sid="510581143265345">
                 <plugin id="Sprite" />
@@ -176,11 +176,11 @@
             </object-type>
             <object-type name="textTitle2" sid="229950994530590">
                 <plugin id="Spritefont2" />
-                <texture />
+                <texture original-source="C:\Users\GJ Lee\Desktop\SpriteFont_AnonymousPro_Regular_(28)_[1,1,1,1]_19x31.png" />
             </object-type>
             <object-type name="textScore" sid="569338947096204">
                 <plugin id="Spritefont2" />
-                <texture />
+                <texture original-source="C:\Users\GJ Lee\Desktop\SpriteFont_AnonymousPro_Regular_(28)_[1,1,1,1]_19x31.png" />
             </object-type>
             <object-type name="backButton" sid="170907701600090">
                 <plugin id="Sprite" />
@@ -206,7 +206,7 @@
             </object-type>
             <object-type name="textResetScores" sid="441130440139428">
                 <plugin id="Spritefont2" />
-                <texture />
+                <texture original-source="C:\Users\GJ Lee\Desktop\SpriteFont_AnonymousPro_Regular_(28)_[1,1,1,1]_19x31.png" />
             </object-type>
             <object-type name="moregames" sid="206689007778686">
                 <plugin id="NinePatch" />
@@ -1373,6 +1373,24 @@
                             <point x="0.498507" y="0.971429" />
                             <point x="0.0208955" y="0.933333" />
                             <point x="0.0119403" y="0.495238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titleLogo" sid="544616287908882">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="513654608143136" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\ASTRONUTS_logo.png">
+                        <collision-poly>
+                            <point x="0.0673077" y="0.276316" />
+                            <point x="0.5" y="0.723684" />
+                            <point x="0.929487" y="0.289474" />
+                            <point x="0.955128" y="0.5" />
+                            <point x="0.980769" y="0.921053" />
+                            <point x="0.5" y="0.828947" />
+                            <point x="0.0224359" y="0.907895" />
                         </collision-poly>
                     </frame>
                 </animation>
