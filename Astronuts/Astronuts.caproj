@@ -24,6 +24,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -290,6 +291,33 @@
                                 <point x="0.980769" y="0.921053" />
                                 <point x="0.5" y="0.828947" />
                                 <point x="0.0224359" y="0.907895" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpaceAcornTitle" sid="966852383560995">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="774105294753212">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="Rotate" sid="538260268301266">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799968900148194" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\normalAcorn.png">
+                            <collision-poly>
+                                <point x="0.232143" y="0.19697" />
+                                <point x="0.5" y="0.030303" />
+                                <point x="0.785714" y="0.181818" />
+                                <point x="0.964286" y="0.5" />
+                                <point x="0.803571" y="0.833333" />
+                                <point x="0.5" y="0.969697" />
+                                <point x="0.196429" y="0.833333" />
+                                <point x="0.0535714" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1437,6 +1465,15 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="invisibleSolid" sid="780890683369814">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="615104056975375">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="Collectibles" plugin-id="Sprite" sid="526221290032440">
@@ -1444,6 +1481,7 @@
                 <member>collectForPlatform</member>
                 <member>resultSpaceAcorn</member>
                 <member>SpaceAcorn</member>
+                <member>SpaceAcornTitle</member>
             </members>
         </family>
     </families>
@@ -1459,6 +1497,7 @@
         <layout>6.xml</layout>
         <layout>7.xml</layout>
         <layout>8.xml</layout>
+        <layout>9.xml</layout>
         <layout>Win.xml</layout>
     </layout-folder>
     <event-folder>

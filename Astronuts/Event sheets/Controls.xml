@@ -140,7 +140,7 @@
                                     <param id="0" name="Folder">0</param>
                                     <param id="1" name="Audio file name">&quot;Jump&quot; &amp; str(choose(1,2,3))</param>
                                     <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
+                                    <param id="4" name="Volume">-20</param>
                                     <param id="2" name="Tag (optional)">&quot;jump&quot;</param>
                                 </action>
                             </actions>
@@ -156,7 +156,7 @@
                                 <action id="0" name="Play" sid="853148002391062" type="Audio">
                                     <param id="0" name="Audio file">Jump5</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-30</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>

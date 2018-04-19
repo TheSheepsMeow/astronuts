@@ -16,7 +16,7 @@
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">&quot;Hit Lava&quot; &amp; str(choose(1,2))</param>
                             <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">0</param>
+                            <param id="4" name="Volume">-20</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="ScrollTo" id="0" name="Shake" sid="729002465620942" type="camera">

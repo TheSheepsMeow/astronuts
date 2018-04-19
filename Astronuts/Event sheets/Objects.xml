@@ -52,10 +52,6 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="Image point">0</param>
                         </action>
-                        <action disabled="1" id="-10" name="Add to" sid="257095038721416" type="System">
-                            <param id="0" name="Variable">score</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                         <action id="-9" name="Destroy" sid="742749322953664" type="collectForPlatform" />
                     </actions>
                 </event-block>
@@ -129,12 +125,8 @@
                         <action id="0" name="Play" sid="726288673530661" type="Audio">
                             <param id="0" name="Audio file">Collect Little Acorn1</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-20</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="904229675834277" type="System">
-                            <param id="0" name="Variable">score</param>
-                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-10" name="Add to" sid="151191487583905" type="System">
                             <param id="0" name="Variable">levelScore</param>
@@ -188,11 +180,15 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-10" name="Add to" sid="570232528011435" type="System">
+                            <param id="0" name="Variable">levelScore</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="7" name="Play (by name)" sid="464693561189652" type="Audio">
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">&quot;Collect Big Acorn&quot; &amp; str(choose(1,2))</param>
                             <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">0</param>
+                            <param id="4" name="Volume">-20</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-9" name="Destroy" sid="291294888979546" type="deathFromBelow" />
@@ -236,6 +232,7 @@
                         <condition id="1" name="Is overlapping another object" sid="261693826945345" type="player">
                             <param id="0" name="Object">trampoline</param>
                         </condition>
+                        <condition id="-4" name="Trigger once while true" sid="975401929919656" type="System" />
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="9" name="Set vector Y" sid="311583677391999" type="player">
@@ -248,7 +245,7 @@
                         <action id="0" name="Play" sid="602941625725459" type="Audio">
                             <param id="0" name="Audio file">Jump4</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-20</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>

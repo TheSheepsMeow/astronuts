@@ -113,7 +113,7 @@
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">&quot;Collect Big Acorn&quot; &amp; str(choose(1,2))</param>
                             <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">0</param>
+                            <param id="4" name="Volume">-20</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="423754738878872" type="System">
@@ -325,6 +325,29 @@
                         <action id="-3" name="Set position" sid="859806369744692" type="playerAnimations">
                             <param id="0" name="X">random(LayoutWidth)</param>
                             <param id="1" name="Y">random(100,420)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="197198867644863">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="116070969863822" type="System" />
+                        <condition id="-11" name="For Each" sid="753447313374696" type="System">
+                            <param id="0" name="Object">SpaceAcornTitle</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="633034986818445" type="SpaceAcornTitle">
+                            <param id="0" name="X">random(0, LayoutWidth)</param>
+                            <param id="1" name="Y">random(0, LayoutHeight)</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="838852170525411" type="SpaceAcornTitle">
+                            <param id="0" name="Angle">random(0,360)</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="222704164901168" type="SpaceAcornTitle">
+                            <param id="0" name="Speed">random(20,80)</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="319548331620063" type="SpaceAcornTitle">
+                            <param id="0" name="Speed">random(120,240)</param>
                         </action>
                     </actions>
                 </event-block>

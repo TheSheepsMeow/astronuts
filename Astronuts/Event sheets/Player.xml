@@ -19,7 +19,7 @@
                         <condition id="-2" name="On start of layout" sid="809387451862049" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-21" name="Reset global variables" sid="490434068341420" type="System" />
+                        <action disabled="1" id="-21" name="Reset global variables" sid="490434068341420" type="System" />
                         <action id="-4" name="Set position to another object" sid="411638426153579" type="playerAnimations">
                             <param id="0" name="Object">player</param>
                             <param id="1" name="Image point (optional)">0</param>
