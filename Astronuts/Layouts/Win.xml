@@ -227,7 +227,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="goalParticle" uid="161">
+                <instance type="goldenParticle" uid="161">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>360</spray-cone>

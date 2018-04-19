@@ -231,6 +231,53 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="249330482558256" title="Camera">
+            <sub-events>
+                <comment></comment>
+                <event-block sid="285647661033193">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="729834297615574" type="System" />
+                        <condition id="-8" name="Compare two values" sid="592818301546730" type="System">
+                            <param id="0" name="First value">camera.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="266778282994629" type="System">
+                            <param id="0" name="Object to create">camera</param>
+                            <param id="1" name="Layer">&quot;MG&quot;</param>
+                            <param id="2" name="X">LayoutWidth/2</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="968584795289280">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="842928291049793" type="System">
+                            <param id="0" name="First value">player.Count</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="719129244257968" type="camera">
+                            <param id="0" name="X">LayoutWidth/2</param>
+                            <param id="1" name="Y">lerp(camera.Y, player.Y, 0.05)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="263917687884042">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="232380562400308">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="761708762659714" title="Win condition">
             <sub-events>
                 <event-block sid="670868789958986">
@@ -255,6 +302,10 @@
                         <action id="4" name="Set animation" sid="326366458880348" type="playerAnimations">
                             <param id="0" name="Animation">&quot;Win&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="783345395272893" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">levelScore</param>
                         </action>
                         <action id="-16" name="Wait" sid="393847713897597" type="System">
                             <param id="0" name="Seconds">0.5</param>
@@ -284,53 +335,6 @@
                             <param id="0" name="Layout">Title</param>
                         </action>
                     </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="541935330609450" title="Camera">
-            <sub-events>
-                <comment></comment>
-                <event-block sid="390478681400283">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="791590001390196" type="System" />
-                        <condition id="-8" name="Compare two values" sid="174830035663233" type="System">
-                            <param id="0" name="First value">camera.Count</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="318144962432549" type="System">
-                            <param id="0" name="Object to create">camera</param>
-                            <param id="1" name="Layer">&quot;MG&quot;</param>
-                            <param id="2" name="X">LayoutWidth/2</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment></comment>
-                <event-block sid="716417978371944">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="865970414862313" type="System">
-                            <param id="0" name="First value">player.Count</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="400810853423746" type="camera">
-                            <param id="0" name="X">LayoutWidth/2</param>
-                            <param id="1" name="Y">lerp(camera.Y, player.Y, 0.05)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="243869304653238">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="149878441058575">
-                    <conditions />
-                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -617,54 +621,54 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="352426709232918" title="Stars">
+        <event-group description="" sid="352426709232918" title="Ending">
             <sub-events>
-                <event-block sid="732574021686690">
+                <event-block sid="117736268202852">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="314503729550846" type="System" />
+                        <condition id="-8" name="Compare two values" sid="965265116442934" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Win&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="776094249669768" type="endTree">
+                            <param id="0" name="Pin to">endSleepingCat</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="668647485039234" type="endSleepingCatTail">
+                            <param id="0" name="Pin to">endSleepingCat</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="191554922907238" type="playerAnimations">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="858887705481754">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="760559622273631" type="System">
+                                    <param id="0" name="Object">endTree</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="420974030727576" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="351523903694556" type="endTree">
+                                    <param id="0" name="Speed">random(4,8)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="564297274946625">
                     <conditions />
                     <actions />
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="545336731617497">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="262398516925750" type="System" />
-                <condition id="-8" name="Compare two values" sid="642802647620977" type="System">
-                    <param id="0" name="First value">LayoutName</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">&quot;Win&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="853589934964002" type="endTree">
-                    <param id="0" name="Pin to">endSleepingCat</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="166491117774135" type="endSleepingCatTail">
-                    <param id="0" name="Pin to">endSleepingCat</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Rotate" id="0" name="Set speed" sid="147569952175997" type="playerAnimations">
-                    <param id="0" name="Speed">0</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="447631977585166">
-                    <conditions>
-                        <condition id="-11" name="For Each" sid="378747658279584" type="System">
-                            <param id="0" name="Object">endTree</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="581613503193265" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="6" name="Set speed" sid="563728360895110" type="endTree">
-                            <param id="0" name="Speed">random(4,8)</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="766661022546756">
             <conditions />
             <actions />

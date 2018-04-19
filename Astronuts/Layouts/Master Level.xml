@@ -908,7 +908,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ceilingGoal" uid="164">
+                <instance type="GoldenAcorn" uid="164">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -953,7 +953,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="goalParticle" uid="165">
+                <instance type="goldenParticle" uid="165">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>360</spray-cone>
@@ -1227,7 +1227,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="collectSpaceAcorn" uid="145">
+                <instance type="SpaceAcorn" uid="145">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1249,7 +1249,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="collectSpaceAcorn" uid="201">
+                <instance type="SpaceAcorn" uid="201">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1271,7 +1271,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="collectSpaceAcorn" uid="202">
+                <instance type="SpaceAcorn" uid="202">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1489,7 +1489,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="collectSpaceAcorn" uid="204">
+                <instance type="SpaceAcorn" uid="204">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

@@ -77,64 +77,8 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="794595755082198" title="Collectibles">
+        <event-group description="" sid="794595755082198" title="Bubbles">
             <sub-events>
-                <event-block sid="169085012167484">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="576664630273031" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="910809313560831" type="acornBubble">
-                            <param id="0" name="Pin to">ceilingGoal</param>
-                            <param id="1" name="Mode">4</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="889869210982966">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="611647344280608" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="667634657300923" type="collectSpaceAcorn">
-                            <param id="0" name="Object">acornBubble</param>
-                            <param id="1" name="Layer">collectSpaceAcorn.LayerNumber</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="9" name="Set scale" sid="542821374400784" type="acornBubble">
-                            <param id="0" name="Scale">0.85</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>space acorns</comment>
-                <event-block sid="500817209081143">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="984986574179400" type="player">
-                            <param id="0" name="Object">collectSpaceAcorn</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="662407848341354" type="Audio">
-                            <param id="0" name="Audio file">Collect Little Acorn1</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="942006938577098" type="System">
-                            <param id="0" name="Variable">score</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="126862891749496" type="System">
-                            <param id="0" name="Variable">levelScore</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="934766459593876" type="collectSpaceAcorn">
-                            <param id="0" name="Object">collectParticle</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="777928594919113" type="collectSpaceAcorn" />
-                    </actions>
-                </event-block>
                 <event-block sid="461261926484805">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="460925052650025" type="player">
@@ -144,52 +88,138 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="551846447832188" type="acornBubble" />
                     </actions>
+                    <sub-events>
+                        <event-block sid="175595731716188">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <comment>golden acorn</comment>
-                <comment>This triggers deathFromAbove to start moving down.</comment>
-                <event-block sid="632169631299625">
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="423484794226194" title="Space Acorns">
+            <sub-events>
+                <event-block sid="738781452401758">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="649648191721633">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="267477538005254" type="player">
-                            <param id="0" name="Object">ceilingGoal</param>
+                        <condition id="-2" name="On start of layout" sid="607814254523306" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="993709634841863" type="SpaceAcorn">
+                            <param id="0" name="Object">acornBubble</param>
+                            <param id="1" name="Layer">SpaceAcorn.LayerNumber</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="421039690070401" type="acornBubble">
+                            <param id="0" name="Scale">0.85</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>space acorns</comment>
+                <event-block sid="381189337170656">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="936914774295323" type="player">
+                            <param id="0" name="Object">SpaceAcorn</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Play (by name)" sid="175596094573172" type="Audio">
+                        <action id="0" name="Play" sid="726288673530661" type="Audio">
+                            <param id="0" name="Audio file">Collect Little Acorn1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="904229675834277" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="151191487583905" type="System">
+                            <param id="0" name="Variable">levelScore</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="762908156449756" type="SpaceAcorn">
+                            <param id="0" name="Object">collectParticle</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="635757238478184" type="SpaceAcorn" />
+                    </actions>
+                </event-block>
+                <event-block sid="497526860076952">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="583926201538967" title="Golden Acorns">
+            <sub-events>
+                <event-block sid="737097676750128">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="151059413801851">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="839172260472632" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="485797726848557" type="GoldenAcorn">
+                            <param id="0" name="Object">acornBubble</param>
+                            <param id="1" name="Layer">GoldenAcorn.LayerNumber</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="239031989103839" type="acornBubble">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="226085009514364" type="acornBubble">
+                            <param id="0" name="Pin to">GoldenAcorn</param>
+                            <param id="1" name="Mode">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>golden acorn</comment>
+                <comment>This triggers deathFromAbove to start moving down.</comment>
+                <event-block sid="883118886335270">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="504894558681136" type="player">
+                            <param id="0" name="Object">GoldenAcorn</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="464693561189652" type="Audio">
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">&quot;Collect Big Acorn&quot; &amp; str(choose(1,2))</param>
                             <param id="3" name="Loop">0</param>
                             <param id="4" name="Volume">0</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="234420360018151" type="deathFromBelow" />
-                        <action id="-13" name="Set boolean" sid="144158032720287" type="catHeadBody">
+                        <action id="-9" name="Destroy" sid="291294888979546" type="deathFromBelow" />
+                        <action id="-13" name="Set boolean" sid="882696085896025" type="catHeadBody">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="448099588471975" type="pawLeft">
+                        <action id="-13" name="Set boolean" sid="484623116188451" type="pawLeft">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="767520430156225" type="pawRight">
+                        <action id="-13" name="Set boolean" sid="819859875043496" type="pawRight">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="117055138506064" type="ceilingGoal" />
-                        <action behavior="ScrollTo" id="0" name="Shake" sid="363340861260647" type="camera">
+                        <action id="-9" name="Destroy" sid="993359298637391" type="GoldenAcorn" />
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="519801478502691" type="camera">
                             <param id="0" name="Magnitude">20</param>
                             <param id="1" name="Duration">4</param>
                             <param id="2" name="Mode">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="167862498513066" type="floorGoal">
+                        <action id="-15" name="Set visible" sid="515201305983577" type="floorGoal">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="576900332979355">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="875798105376725">
+                <event-block sid="741366785651928">
                     <conditions />
                     <actions />
                 </event-block>
@@ -241,94 +271,6 @@
                     <actions />
                 </event-block>
                 <event-block sid="533104333581223">
-                    <conditions />
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="444048775333954" title="Cat face">
-            <sub-events>
-                <event-block sid="120127458123134">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="280944805493930" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="629641151873122" type="System">
-                            <param id="0" name="Object to create">catHeadBody</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="X">160</param>
-                            <param id="3" name="Y">103</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="649971534865441" type="catHeadBody">
-                            <param id="0" name="Width">385</param>
-                            <param id="1" name="Height">342</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="897420877275537" type="System">
-                            <param id="0" name="Object to create">pawLeft</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="X">20</param>
-                            <param id="3" name="Y">75</param>
-                        </action>
-                        <action id="-25" name="Move to bottom" sid="233815641155439" type="pawLeft" />
-                        <action id="-3" name="Create object" sid="914753881619668" type="System">
-                            <param id="0" name="Object to create">pawRight</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="X">297</param>
-                            <param id="3" name="Y">75</param>
-                        </action>
-                        <action id="-25" name="Move to bottom" sid="455205552529985" type="pawRight" />
-                        <action id="0" name="Spawn another object" sid="689446929528539" type="catHeadBody">
-                            <param id="0" name="Object">catEarLeft</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="907095689183861" type="catHeadBody">
-                            <param id="0" name="Object">catEarRight</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="Image point">2</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="848825293779957" type="catHeadBody">
-                            <param id="0" name="Object">catEyeLeft</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="Image point">3</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="482928203387615" type="catHeadBody">
-                            <param id="0" name="Object">catEyeRight</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="Image point">4</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="873747956296126" type="catHeadBody">
-                            <param id="0" name="Object">catMouth</param>
-                            <param id="1" name="Layer">&quot;CAT&quot;</param>
-                            <param id="2" name="Image point">5</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="456887524272786" type="catEarLeft">
-                            <param id="0" name="Pin to">catHeadBody</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="949170108907488" type="catEarRight">
-                            <param id="0" name="Pin to">catHeadBody</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="957334660377405" type="catEyeLeft">
-                            <param id="0" name="Pin to">catHeadBody</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="982020328794423" type="catEyeRight">
-                            <param id="0" name="Pin to">catHeadBody</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="670177308915076" type="catMouth">
-                            <param id="0" name="Pin to">catHeadBody</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="586554326770260">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="931749862372473">
                     <conditions />
                     <actions />
                 </event-block>

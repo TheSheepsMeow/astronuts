@@ -31,6 +31,10 @@
                         <action id="-15" name="Set visible" sid="742073880351809" type="player">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-7" name="Set size" sid="112428908449228" type="player">
+                            <param id="0" name="Width">32</param>
+                            <param id="1" name="Height">32</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="302361816238402">
@@ -135,7 +139,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="408057523455304" type="player">
-                            <param id="0" name="Y">self.Y-2</param>
+                            <param id="0" name="Y">self.Y-(2*60*dt)</param>
                         </action>
                     </actions>
                 </event-block>

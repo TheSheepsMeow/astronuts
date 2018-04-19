@@ -2,7 +2,7 @@
 <c2project>
     <name>Astronuts</name>
     <description></description>
-    <version>0.11</version>
+    <version>0.12</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -440,7 +440,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="5">
-                        <frame duration="1" hotspotX="0.50289" hotspotY="0.502959" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
+                        <frame duration="1" hotspotX="0.50289" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
                             <collision-poly>
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
@@ -682,7 +682,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="collectSpaceAcorn" sid="741405633649020">
+            <object-type name="SpaceAcorn" sid="741405633649020">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985298424298743" speed="0">
@@ -705,7 +705,7 @@
                 <plugin id="Particles" />
                 <texture />
             </object-type>
-            <object-type name="ceilingGoal" sid="594948693491296">
+            <object-type name="GoldenAcorn" sid="594948693491296">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="dangerous" sid="434093184101085" type="boolean" />
@@ -735,7 +735,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="goalParticle" sid="351378221404465">
+            <object-type name="goldenParticle" sid="351378221404465">
                 <plugin id="Particles" />
                 <texture />
             </object-type>
@@ -1442,8 +1442,8 @@
         <family name="Collectibles" plugin-id="Sprite" sid="526221290032440">
             <members>
                 <member>collectForPlatform</member>
-                <member>collectSpaceAcorn</member>
                 <member>resultSpaceAcorn</member>
+                <member>SpaceAcorn</member>
             </members>
         </family>
     </families>
@@ -1457,6 +1457,8 @@
         <layout>4.xml</layout>
         <layout>5.xml</layout>
         <layout>6.xml</layout>
+        <layout>7.xml</layout>
+        <layout>8.xml</layout>
         <layout>Win.xml</layout>
     </layout-folder>
     <event-folder>
