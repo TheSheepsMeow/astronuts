@@ -271,7 +271,7 @@
                 <event-block sid="524769716600852">
                     <conditions>
                         <condition id="17" name="On tap object" sid="847556975182739" type="Touch">
-                            <param id="0" name="Object">moregames</param>
+                            <param id="0" name="Object">MoreGames2</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -309,26 +309,34 @@
                     <conditions />
                     <actions />
                 </event-block>
-                <event-block sid="798926192242320">
-                    <conditions />
-                    <actions />
-                </event-block>
                 <event-block sid="190648521341526">
                     <conditions />
                     <actions />
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="358750669610188">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="278514530472434" type="System" />
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="635029363834447" type="playerAnimations">
-                    <param id="0" name="X">random(LayoutWidth)</param>
-                    <param id="1" name="Y">random(LayoutHeight)</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="521155908298953" title="Title Screen Squirrel">
+            <sub-events>
+                <event-block sid="354106706115849">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="751368186064809" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="859806369744692" type="playerAnimations">
+                            <param id="0" name="X">random(LayoutWidth)</param>
+                            <param id="1" name="Y">random(100,420)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="678934566622808">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="812238453597239">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

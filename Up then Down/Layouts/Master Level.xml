@@ -3951,11 +3951,11 @@
                 </instance>
                 <instance type="textScore" uid="31">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>19</character-width>
+                        <character-height>31</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>Text</text>
-                        <scale>0.75</scale>
+                        <scale>0.5</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -4072,7 +4072,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-34</x>
+                        <x>-13</x>
                         <y>-11</y>
                         <z>0</z>
                         <width>346</width>
@@ -4094,8 +4094,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>159</x>
-                        <y>370</y>
+                        <x>-240</x>
+                        <y>368</y>
                         <z>0</z>
                         <width>98</width>
                         <height>36</height>
@@ -4116,8 +4116,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>159</x>
-                        <y>262</y>
+                        <x>-240</x>
+                        <y>256</y>
                         <z>0</z>
                         <width>98</width>
                         <height>36</height>

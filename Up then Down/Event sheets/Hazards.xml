@@ -340,7 +340,7 @@
                                 </action>
                                 <action id="-23" name="Move at angle" sid="890062394058145" type="deathFromBelow">
                                     <param id="0" name="Angle">270</param>
-                                    <param id="1" name="Distance">1</param>
+                                    <param id="1" name="Distance">60*dt</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -368,18 +368,18 @@
                             <actions>
                                 <action id="-23" name="Move at angle" sid="866986973661935" type="catHeadBody">
                                     <param id="0" name="Angle">90</param>
-                                    <param id="1" name="Distance">1.5</param>
+                                    <param id="1" name="Distance">1.5*60*dt</param>
                                 </action>
                                 <action behavior="Platform" id="4" name="Set jump strength" sid="937129232295849" type="player">
                                     <param id="0" name="Jump strength">50</param>
                                 </action>
                                 <action id="-23" name="Move at angle" sid="546691442838236" type="pawLeft">
                                     <param id="0" name="Angle">90</param>
-                                    <param id="1" name="Distance">1.5</param>
+                                    <param id="1" name="Distance">1.5*60*dt</param>
                                 </action>
                                 <action id="-23" name="Move at angle" sid="661060500208996" type="pawRight">
                                     <param id="0" name="Angle">90</param>
-                                    <param id="1" name="Distance">1.5</param>
+                                    <param id="1" name="Distance">1.5*60*dt</param>
                                 </action>
                             </actions>
                         </event-block>

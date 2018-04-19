@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>Up then Down</name>
+    <name>Astronuts</name>
     <description></description>
-    <version>0.10</version>
+    <version>0.11</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -82,6 +82,14 @@
             </object-type>
             <object-type name="menuButton" sid="474843003885325">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="483034088611880">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="339679076650544">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725177815464689" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Play-Button.png">
@@ -261,6 +269,29 @@
                     <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="413823955303410" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\homepress.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\homepress1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="titleLogo" sid="544616287908882">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="863609665732329">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="513654608143136" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\ASTRONUTS_logo.png">
+                            <collision-poly>
+                                <point x="0.0673077" y="0.276316" />
+                                <point x="0.5" y="0.723684" />
+                                <point x="0.929487" y="0.289474" />
+                                <point x="0.955128" y="0.5" />
+                                <point x="0.980769" y="0.921053" />
+                                <point x="0.5" y="0.828947" />
+                                <point x="0.0224359" y="0.907895" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1280,6 +1311,67 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="ending">
+            <object-type name="endSleepingCat" sid="524156556993018">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="882429773425274">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343732417785427" speed="5">
+                        <frame duration="1" hotspotX="0.507463" hotspotY="0.496479" original-source="C:\Users\GJ Lee\Desktop\UTD_sleepingcat.png">
+                            <collision-poly>
+                                <point x="0.171642" y="0.21831" />
+                                <point x="0.507463" y="0.0105634" />
+                                <point x="0.883085" y="0.161972" />
+                                <point x="0.997512" y="0.496479" />
+                                <point x="0.890547" y="0.841549" />
+                                <point x="0.507463" y="0.992958" />
+                                <point x="0.11194" y="0.859155" />
+                                <point x="0.0522388" y="0.496479" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="endSleepingCatTail" sid="405840405477448">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="421664864507243">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="738332668408672">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470641984054024" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502262" original-source="C:\Users\GJ Lee\Desktop\peaceCatTail.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="endTree" sid="177933692338014">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="696747587230551">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661909965499621" speed="0">
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.965517" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 6endTree.png" />
+                        <frame duration="1" hotspotX="0.537037" hotspotY="0.962025" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 5endTree.png" />
+                        <frame duration="1" hotspotX="0.534483" hotspotY="0.965278" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 4endTree.png" />
+                        <frame duration="1" hotspotX="0.538462" hotspotY="0.965686" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 3endTree.png" />
+                        <frame duration="1" hotspotX="0.543103" hotspotY="0.964912" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree1.png" />
+                        <frame duration="1" hotspotX="0.536585" hotspotY="0.966667" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree2.png" />
+                        <frame duration="1" hotspotX="0.540373" hotspotY="0.965517" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree0.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="developerInfo" sid="694951769311365">
             <plugin id="Text" />
         </object-type>
@@ -1304,65 +1396,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="endTree" sid="177933692338014">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="696747587230551">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661909965499621" speed="0">
-                    <frame duration="1" hotspotX="0.533333" hotspotY="0.965517" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 6endTree.png" />
-                    <frame duration="1" hotspotX="0.537037" hotspotY="0.962025" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 5endTree.png" />
-                    <frame duration="1" hotspotX="0.534483" hotspotY="0.965278" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 4endTree.png" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.965686" original-source="C:\Users\GJ Lee\Desktop\Artboard 38 copy 3endTree.png" />
-                    <frame duration="1" hotspotX="0.543103" hotspotY="0.964912" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree1.png" />
-                    <frame duration="1" hotspotX="0.536585" hotspotY="0.966667" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree2.png" />
-                    <frame duration="1" hotspotX="0.540373" hotspotY="0.965517" original-source="C:\Users\GJ Lee\Desktop\UTD_endTree0.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="endSleepingCat" sid="524156556993018">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="882429773425274">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343732417785427" speed="5">
-                    <frame duration="1" hotspotX="0.507463" hotspotY="0.496479" original-source="C:\Users\GJ Lee\Desktop\UTD_sleepingcat.png">
-                        <collision-poly>
-                            <point x="0.171642" y="0.21831" />
-                            <point x="0.507463" y="0.0105634" />
-                            <point x="0.883085" y="0.161972" />
-                            <point x="0.997512" y="0.496479" />
-                            <point x="0.890547" y="0.841549" />
-                            <point x="0.507463" y="0.992958" />
-                            <point x="0.11194" y="0.859155" />
-                            <point x="0.0522388" y="0.496479" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="endSleepingCatTail" sid="405840405477448">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="421664864507243">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Pin" sid="738332668408672">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470641984054024" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502262" original-source="C:\Users\GJ Lee\Desktop\peaceCatTail.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="MoreGames2" sid="925835950485690">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1381,19 +1414,24 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="titleLogo" sid="544616287908882">
+        <object-type name="thesheepsmeow_logo" sid="926419712877973">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="711674281744279">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="513654608143136" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\ASTRONUTS_logo.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487275399952845" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Desktop\The Sheep&apos;s Meow\thesheepsmeow_logo.png">
                         <collision-poly>
-                            <point x="0.0673077" y="0.276316" />
-                            <point x="0.5" y="0.723684" />
-                            <point x="0.929487" y="0.289474" />
-                            <point x="0.955128" y="0.5" />
-                            <point x="0.980769" y="0.921053" />
-                            <point x="0.5" y="0.828947" />
-                            <point x="0.0224359" y="0.907895" />
+                            <point x="0.102" y="0.17" />
+                            <point x="0.5" y="0.273333" />
+                            <point x="0.98" y="0.5" />
+                            <point x="0.892" y="0.82" />
+                            <point x="0.5" y="0.821667" />
+                            <point x="0.131" y="0.781667" />
+                            <point x="0.024" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1435,14 +1473,14 @@
         <event-sheet>Stars.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="296">
+        <global-instance type="Touch" uid="298">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Function" uid="297" />
-        <global-instance type="LocalStorage" uid="298" />
-        <global-instance type="Audio" uid="299">
+        <global-instance type="Function" uid="299" />
+        <global-instance type="LocalStorage" uid="300" />
+        <global-instance type="Audio" uid="301">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1456,8 +1494,8 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="300" />
-        <global-instance type="Mouse" uid="301" />
+        <global-instance type="Browser" uid="371" />
+        <global-instance type="Mouse" uid="372" />
     </global-instances>
     <sounds-folder>
         <file name="Start_sound_1.m4a" />

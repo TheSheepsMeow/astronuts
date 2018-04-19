@@ -16,7 +16,7 @@
                     <actions>
                         <action id="-23" name="Move at angle" sid="679946627973858" type="player">
                             <param id="0" name="Angle">270</param>
-                            <param id="1" name="Distance">1</param>
+                            <param id="1" name="Distance">60*dt</param>
                         </action>
                     </actions>
                 </event-block>
