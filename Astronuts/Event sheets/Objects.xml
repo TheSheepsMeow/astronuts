@@ -68,8 +68,16 @@
                     </actions>
                 </event-block>
                 <event-block sid="108745872024127">
-                    <conditions />
-                    <actions />
+                    <conditions>
+                        <condition id="-18" name="On created" sid="304943766134461" type="MetalPlatform" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="153394558672574" type="MetalPlatform">
+                            <param id="0" name="Object">MetalPlatformParticles</param>
+                            <param id="1" name="Layer">MetalPlatform.LayerNumber</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

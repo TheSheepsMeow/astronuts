@@ -1496,6 +1496,10 @@
             </behaviors>
             <texture />
         </object-type>
+        <object-type name="MetalPlatformParticles" sid="664525017641702">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Platform Particles.png" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Collectibles" plugin-id="Sprite" sid="526221290032440">
