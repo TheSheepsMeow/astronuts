@@ -233,8 +233,30 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="429248677603925" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep0.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep1.png" />
+                        <frame duration="1" hotspotX="0.502513" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\Sheep0.png">
+                            <collision-poly>
+                                <point x="0.18593" y="0.196809" />
+                                <point x="0.497487" y="0.0851064" />
+                                <point x="0.819095" y="0.191489" />
+                                <point x="0.919598" y="0.5" />
+                                <point x="0.788945" y="0.776596" />
+                                <point x="0.497487" y="0.898936" />
+                                <point x="0.18593" y="0.803191" />
+                                <point x="0.0854271" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502513" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\Sheep1.png">
+                            <collision-poly>
+                                <point x="0.175879" y="0.18617" />
+                                <point x="0.497487" y="0.0478723" />
+                                <point x="0.849246" y="0.159574" />
+                                <point x="0.924623" y="0.5" />
+                                <point x="0.78392" y="0.771277" />
+                                <point x="0.497487" y="0.898936" />
+                                <point x="0.180905" y="0.808511" />
+                                <point x="0.0603015" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -468,10 +490,10 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="5">
-                        <frame duration="1" hotspotX="0.50289" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
+                        <frame duration="1" hotspotX="0.482143" hotspotY="0.948387" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
+                                <point x="1" y="0.935484" />
+                                <point x="0" y="0.935484" />
                                 <point x="0" y="0" />
                                 <point x="1" y="0" />
                             </collision-poly>
@@ -1170,7 +1192,7 @@
                 <instance-variables>
                     <instance-variable name="id" sid="491044109510434" type="number" />
                 </instance-variables>
-                <texture />
+                <texture original-source="C:\Users\GJ Lee\Desktop\AnonymousBlack.png" />
             </object-type>
             <object-type name="resultButtonMenu" sid="396677686022839">
                 <plugin id="Sprite" />
@@ -1216,7 +1238,7 @@
                 <instance-variables>
                     <instance-variable name="id" sid="368994168041215" type="number" />
                 </instance-variables>
-                <texture />
+                <texture original-source="C:\Users\GJ Lee\Desktop\AnonymousBlack.png" />
             </object-type>
             <object-type name="BGBadBorder" sid="380056905601632">
                 <plugin id="Sprite" />
