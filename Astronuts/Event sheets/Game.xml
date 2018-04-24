@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
+        <include>Music</include>
         <include>Stars</include>
         <variable constant="0" name="levelTimer" sid="544239523588259" static="0" type="number">0</variable>
         <include>Hazards</include>
@@ -136,6 +137,12 @@
                         <action id="-14" name="Set object time scale" sid="738477671375863" type="System">
                             <param id="0" name="Object">restartButton</param>
                             <param id="1" name="Time scale">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="333150299762224" type="Audio">
+                            <param id="0" name="Audio file">Button Push</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -287,6 +294,15 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="6" name="Stop" sid="529158894316017" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="102676844886751" type="Audio">
+                            <param id="0" name="Audio file">astro_chimeup</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Platform" id="11" name="Set enabled" sid="914222659339854" type="player">
                             <param id="0" name="State">0</param>
                         </action>
@@ -395,6 +411,12 @@
                                 <action id="-2" name="Go to layout" sid="563258457641390" type="System">
                                     <param id="0" name="Layout">Title</param>
                                 </action>
+                                <action id="0" name="Play" sid="566639336137310" type="Audio">
+                                    <param id="0" name="Audio file">Button Push</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="326879381173505">
@@ -440,6 +462,18 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-26" name="Restart layout" sid="692910600520339" type="System" />
+                                <action id="0" name="Play" sid="645037671889933" type="Audio">
+                                    <param id="0" name="Audio file">astro_chimedown</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="931065126846745" type="Audio">
+                                    <param id="0" name="Audio file">Button Push</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="388448453903316">
@@ -486,6 +520,18 @@
                                 </action>
                                 <action id="-43" name="Go to next/previous layout" sid="721562362019858" type="System">
                                     <param id="0" name="Which">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="548863195770834" type="Audio">
+                                    <param id="0" name="Audio file">astro_chimedown</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-15</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="359827146525348" type="Audio">
+                                    <param id="0" name="Audio file">Button Push</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -631,17 +677,78 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment></comment>
                         <event-block sid="180578575274190">
-                            <conditions />
-                            <actions />
+                            <conditions>
+                                <condition id="-9" name="Layer is visible" sid="251831140697644" type="System">
+                                    <param id="0" name="Layer">&quot;End&quot;</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="576759138545617" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="549644058655677" type="Audio">
+                                    <param id="0" name="Audio file">Level Failed</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <event-block sid="132727880754168">
-                            <conditions />
-                            <actions />
+                            <conditions>
+                                <condition id="-9" name="Layer is visible" sid="550903706643626" type="System">
+                                    <param id="0" name="Layer">&quot;Result&quot;</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="549695500320509" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="333107892316378" type="Audio">
+                                    <param id="0" name="Audio file">Level Complete</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="473421959017362">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="612156054967918">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="316839653474006">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="365753816499247">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="513926415027040">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="889630619017533">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="141620573982937">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="755449353173655">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="516547052537205">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="881519010872988">
                     <conditions />
                     <actions />
                 </event-block>
@@ -669,6 +776,12 @@
                         </action>
                         <action behavior="Rotate" id="0" name="Set speed" sid="191554922907238" type="playerAnimations">
                             <param id="0" name="Speed">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="570063665922902" type="Audio">
+                            <param id="0" name="Audio file">astro_fanfare</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>

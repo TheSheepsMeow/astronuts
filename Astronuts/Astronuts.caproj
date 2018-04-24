@@ -2,7 +2,7 @@
 <c2project>
     <name>Astronuts</name>
     <description></description>
-    <version>0.13</version>
+    <version>0.14</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -1546,6 +1546,7 @@
         <event-sheet>Objects.xml</event-sheet>
         <event-sheet>Hazards.xml</event-sheet>
         <event-sheet>Stars.xml</event-sheet>
+        <event-sheet>Music.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="298">
@@ -1613,6 +1614,58 @@
         <file name="Jump5.ogg" />
         <file name="Platform Appear1.m4a" />
         <file name="Platform Appear1.ogg" />
+        <file name="pooping.m4a" />
+        <file name="pooping.ogg" />
+        <file name="footsteps.m4a" />
+        <file name="footsteps.ogg" />
+        <file name="astro_chimedown.m4a" />
+        <file name="astro_chimedown.ogg" />
+        <file name="astro_chimeup.m4a" />
+        <file name="astro_chimeup.ogg" />
+        <file name="astro_fanfare.m4a" />
+        <file name="astro_fanfare.ogg" />
+        <file name="astro_nut1.m4a" />
+        <file name="astro_nut1.ogg" />
+        <file name="astro_nut2.m4a" />
+        <file name="astro_nut2.ogg" />
+        <file name="astro_nut3.m4a" />
+        <file name="astro_nut3.ogg" />
+        <file name="astro_nut4.m4a" />
+        <file name="astro_nut4.ogg" />
+        <file name="astro_nut5.m4a" />
+        <file name="astro_nut5.ogg" />
+        <file name="astro_ohno.m4a" />
+        <file name="astro_ohno.ogg" />
+        <file name="Button Push.m4a" />
+        <file name="Button Push.ogg" />
+        <file name="Bubble Pop.m4a" />
+        <file name="Bubble Pop.ogg" />
+        <file name="Level Complete.m4a" />
+        <file name="Level Complete.ogg" />
+        <file name="Level Failed.m4a" />
+        <file name="Level Failed.ogg" />
+        <file name="groundpound.m4a" />
+        <file name="groundpound.ogg" />
+        <file name="57 Siamese, Individual Meows.m4a" />
+        <file name="57 Siamese, Individual Meows.ogg" />
+        <file name="58 Siamese, Individual Meows.m4a" />
+        <file name="58 Siamese, Individual Meows.ogg" />
+        <file name="59 Siamese, Individual Meows.m4a" />
+        <file name="59 Siamese, Individual Meows.ogg" />
+        <file name="60 Siamese, Individual Meows.m4a" />
+        <file name="60 Siamese, Individual Meows.ogg" />
+        <file name="61 Siamese, Individual Meows.m4a" />
+        <file name="61 Siamese, Individual Meows.ogg" />
+        <file name="63 Burmese, Individual Meows.m4a" />
+        <file name="63 Burmese, Individual Meows.ogg" />
+        <file name="64 Burmese, Individual Meows.m4a" />
+        <file name="64 Burmese, Individual Meows.ogg" />
+        <file name="65 Burmese, Individual Meows.m4a" />
+        <file name="65 Burmese, Individual Meows.ogg" />
+        <file name="66 Burmese, Individual Meows.m4a" />
+        <file name="66 Burmese, Individual Meows.ogg" />
+        <file name="67 Burmese, Individual Meows.m4a" />
+        <file name="67 Burmese, Individual Meows.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Title Screen Music Edited.m4a" />

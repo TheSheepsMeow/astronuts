@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Title</name>
     <events>
+        <include>Music</include>
         <include>Stars</include>
         <include>LocalStorage</include>
         <variable constant="0" name="isMuted" sid="512360878513342" static="0" type="number">0</variable>
@@ -34,12 +35,18 @@
                         <action id="-16" name="Wait" sid="541278060380455" type="System">
                             <param id="0" name="Seconds">0.1</param>
                         </action>
-                        <action id="7" name="Play (by name)" sid="427106645911090" type="Audio">
+                        <action disabled="1" id="7" name="Play (by name)" sid="427106645911090" type="Audio">
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">&quot;Start_sound_&quot; &amp; choose(1,2,3,4,5)</param>
                             <param id="3" name="Loop">0</param>
                             <param id="4" name="Volume">0</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="888748546839941" type="Audio">
+                            <param id="0" name="Audio file">Button Push</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -109,12 +116,24 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Play (by name)" sid="140109902168815" type="Audio">
+                        <action disabled="1" id="7" name="Play (by name)" sid="140109902168815" type="Audio">
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">&quot;Collect Big Acorn&quot; &amp; str(choose(1,2))</param>
                             <param id="3" name="Loop">0</param>
                             <param id="4" name="Volume">-20</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="224584946568173" type="Audio">
+                            <param id="0" name="Audio file">Button Push</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="287291711078429" type="Audio">
+                            <param id="0" name="Audio file">astro_chimedown</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="423754738878872" type="System">
                             <param id="0" name="Variable">score</param>
@@ -280,38 +299,6 @@
                             <param id="1" name="Target">2</param>
                         </action>
                     </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="670389789490768" title="Music">
-            <sub-events>
-                <event-block sid="410744252775727">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="509225171333977">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="499938946289768" type="System" />
-                        <condition id="5" inverted="1" name="Is tag playing" sid="395744291150107" type="Audio">
-                            <param id="0" name="Tag">&quot;music&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="168084321855053" type="Audio">
-                            <param id="0" name="Audio file">Title Screen Music Edited</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="545254469925263">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="190648521341526">
-                    <conditions />
-                    <actions />
                 </event-block>
             </sub-events>
         </event-group>

@@ -16,8 +16,14 @@
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">&quot;Hit Lava&quot; &amp; str(choose(1,2))</param>
                             <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">-20</param>
+                            <param id="4" name="Volume">-15</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="470958001244452" type="Audio">
+                            <param id="0" name="Audio file">astro_ohno</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="ScrollTo" id="0" name="Shake" sid="729002465620942" type="camera">
                             <param id="0" name="Magnitude">20</param>
@@ -61,11 +67,14 @@
                             <param id="0" name="Vector Y">-250</param>
                         </action>
                         <action id="-16" name="Wait" sid="235497698768121" type="System">
-                            <param id="0" name="Seconds">1</param>
+                            <param id="0" name="Seconds">1.5</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="230185631474309" type="System">
                             <param id="0" name="Layer">&quot;End&quot;</param>
                             <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="892402666085330" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -601,6 +610,12 @@
                             <param id="0" name="Torque">5</param>
                             <param id="1" name="Angle">angle(catHeadBody.X, catHeadBody.Y, Self.X, Self.Y)</param>
                         </action>
+                        <action id="0" name="Play" sid="540370968559728" type="Audio">
+                            <param id="0" name="Audio file">groundpound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="617824797874492">
@@ -625,6 +640,12 @@
                             <param id="0" name="Torque">5</param>
                             <param id="1" name="Angle">angle(catHeadBody.X, catHeadBody.Y, Self.X, Self.Y)</param>
                         </action>
+                        <action id="0" name="Play" sid="764062620738676" type="Audio">
+                            <param id="0" name="Audio file">groundpound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="777739742899352">
@@ -648,6 +669,12 @@
                         <action behavior="Physics" id="7" name="Apply torque towards angle" sid="840367247620078" type="SpaceCloudPlatform">
                             <param id="0" name="Torque">5</param>
                             <param id="1" name="Angle">angle(catHeadBody.X, catHeadBody.Y, Self.X, Self.Y)</param>
+                        </action>
+                        <action id="0" name="Play" sid="841204925139133" type="Audio">
+                            <param id="0" name="Audio file">groundpound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>

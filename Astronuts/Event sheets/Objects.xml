@@ -91,6 +91,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="551846447832188" type="acornBubble" />
+                        <action id="0" name="Play" sid="603880104300949" type="Audio">
+                            <param id="0" name="Audio file">Bubble Pop</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="175595731716188">
@@ -130,12 +136,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="726288673530661" type="Audio">
-                            <param id="0" name="Audio file">Collect Little Acorn1</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-20</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                         <action id="-10" name="Add to" sid="151191487583905" type="System">
                             <param id="0" name="Variable">levelScore</param>
                             <param id="1" name="Value">1</param>
@@ -146,7 +146,26 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="635757238478184" type="SpaceAcorn" />
+                        <action disabled="1" id="0" name="Play" sid="186912041045912" type="Audio">
+                            <param id="0" name="Audio file">Collect Little Acorn1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="552444810019211" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;astro_nut&quot; &amp; levelScore</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-20</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="748433824911312">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="497526860076952">
                     <conditions />
@@ -199,6 +218,13 @@
                             <param id="4" name="Volume">-20</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="7" name="Play (by name)" sid="372883586529545" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;astro_nut&quot; &amp; levelScore</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action disabled="1" id="-9" name="Destroy" sid="291294888979546" type="deathFromBelow" />
                         <action id="-13" name="Set boolean" sid="882696085896025" type="catHeadBody">
                             <param id="0" name="Instance variable">moving</param>
@@ -220,6 +246,13 @@
                         </action>
                         <action id="-15" name="Set visible" sid="515201305983577" type="floorGoal">
                             <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="130580844269733" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(choose(57, 58, 59, 60, 61) &amp; &quot; Siamese&quot;, choose(63, 64, 65, 66, 67) &amp; &quot; Burmese&quot;) &amp; &quot;, Individual Meows&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>

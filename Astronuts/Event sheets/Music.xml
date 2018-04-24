@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Music</name>
+    <events>
+        <event-group description="" sid="516367003106110" title="Music">
+            <sub-events>
+                <event-block sid="359196346856815">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="936241408660356">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="285508275417288" type="System" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="986447185739756" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="304294830941540" type="Audio">
+                            <param id="0" name="Audio file">Title Screen Music Edited</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="542302476501469">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="539401994068362">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
