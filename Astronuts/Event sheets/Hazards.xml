@@ -79,10 +79,10 @@
                             <param id="0" name="Object">catHeadBody</param>
                         </condition>
                         <condition disabled="1" id="0" name="On collision with another object" sid="729592703151177" type="player">
-                            <param id="0" name="Object">pawLeft</param>
+                            <param id="0" name="Object">catPawLeft</param>
                         </condition>
                         <condition disabled="1" id="0" name="On collision with another object" sid="389594748223542" type="player">
-                            <param id="0" name="Object">pawRight</param>
+                            <param id="0" name="Object">catPawRight</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -272,277 +272,289 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="564361777627530" title="Lava">
+        <event-group description="" sid="242243290095231" title="Cat">
             <sub-events>
-                <comment>Game starts with lava moving up.</comment>
-                <event-block sid="737895990780938">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="204322724205485" type="System" />
-                    </conditions>
+                <event-block sid="863615778020851">
+                    <conditions />
                     <actions />
                 </event-block>
-                <event-block sid="588864712414590">
+                <comment>Game starts with paws moving up.</comment>
+                <event-block sid="115706281703741">
                     <conditions>
-                        <condition id="0" name="On any touch start" sid="370103434806385" type="Touch" />
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="989252384415906" type="deathFromBelow">
+                        <condition id="-2" name="On start of layout" sid="135405882324702" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="240687727495431" type="deathFromBelow">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="288836407447057">
+                    <conditions>
+                        <condition id="0" name="On any touch start" sid="972587605823885" type="Touch" />
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="829835680789326" type="deathFromBelow">
                             <param id="0" name="Instance variable">moving</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="691210860204426" type="System">
+                        <condition id="-8" name="Compare two values" sid="984471653385005" type="System">
                             <param id="0" name="First value">LayoutName</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Second value">&quot;Win&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="ScrollTo" id="0" name="Shake" sid="171010820891045" type="camera">
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="421262997627917" type="camera">
                             <param id="0" name="Magnitude">5</param>
                             <param id="1" name="Duration">0.4</param>
                             <param id="2" name="Mode">0</param>
                         </action>
-                        <action id="-16" name="Wait" sid="719643189331854" type="System">
+                        <action id="-16" name="Wait" sid="471687809430968" type="System">
                             <param id="0" name="Seconds">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="465331632442765" type="deathFromBelow">
+                        <action id="-13" name="Set boolean" sid="859186573954022" type="deathFromBelow">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="302782694612898" type="deathFromBelow">
-                            <param id="0" name="State">1</param>
-                        </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="242243290095231" title="Cat">
-            <sub-events>
-                <event-block sid="507959851525570">
+                <comment></comment>
+                <event-block sid="996426270190313">
                     <conditions>
-                        <condition id="-9" inverted="1" name="Layer is visible" sid="895478420917343" type="System">
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="848546275523483" type="System">
                             <param id="0" name="Layer">&quot;End&quot;</param>
                         </condition>
-                        <condition id="-9" inverted="1" name="Layer is visible" sid="921424339891333" type="System">
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="863974089791270" type="System">
                             <param id="0" name="Layer">&quot;Result&quot;</param>
+                        </condition>
+                        <condition id="2" inverted="1" name="Is playing" sid="923139333024921" type="playerAnimations">
+                            <param id="0" name="Animation">&quot;Win&quot;</param>
+                        </condition>
+                        <condition id="2" inverted="1" name="Is playing" sid="548903178273313" type="playerAnimations">
+                            <param id="0" name="Animation">&quot;Death&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
                         <comment>Death from below.</comment>
-                        <event-block sid="763442997995807">
+                        <event-block sid="729368706575924">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="338227256918031" type="deathFromBelow">
+                                <condition id="-8" name="Is boolean instance variable set" sid="504326270330312" type="deathFromBelow">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action disabled="1" id="-23" name="Move at angle" sid="673779145927431" type="deathFromBelow">
+                                <action disabled="1" id="-23" name="Move at angle" sid="581317985675196" type="deathFromBelow">
                                     <param id="0" name="Angle">270</param>
                                     <param id="1" name="Distance">0.15*score</param>
                                 </action>
-                                <action disabled="1" id="-20" name="Set layout scale" sid="217240477031028" type="System">
+                                <action disabled="1" id="-20" name="Set layout scale" sid="868677747688736" type="System">
                                     <param id="0" name="Scale">0.3</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="850459287917616">
+                                <event-block sid="209263177037117">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="372834918063297" type="System">
+                                        <condition id="-8" name="Compare two values" sid="462388500333663" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, deathFromBelow.X, deathFromBelow.Y)</param>
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">400</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="524272323472975" type="deathFromBelow">
+                                        <action id="-23" name="Move at angle" sid="424817935030874" type="deathFromBelow">
                                             <param id="0" name="Angle">270</param>
                                             <param id="1" name="Distance">60*dt</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="305496388936494">
+                                <event-block sid="922043562213915">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="628261455996926" type="System">
+                                        <condition id="-8" name="Compare two values" sid="567937436739987" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, deathFromBelow.X, deathFromBelow.Y)</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">400</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" sid="964484724045772" type="System">
+                                        <condition id="-8" name="Compare two values" sid="277159212465565" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, deathFromBelow.X, deathFromBelow.Y)</param>
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">500</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="190165217307356" type="deathFromBelow">
+                                        <action id="-23" name="Move at angle" sid="546525582001485" type="deathFromBelow">
                                             <param id="0" name="Angle">270</param>
                                             <param id="1" name="Distance">2*60*dt</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="529231754972409">
+                                <event-block sid="536962585570838">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="200141137030620" type="System">
+                                        <condition id="-8" name="Compare two values" sid="602376650022281" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, deathFromBelow.X, deathFromBelow.Y)</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">500</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" sid="936428440700808" type="System">
+                                        <condition id="-8" name="Compare two values" sid="638192906023385" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, deathFromBelow.X, deathFromBelow.Y)</param>
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">600</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="890062394058145" type="deathFromBelow">
+                                        <action id="-23" name="Move at angle" sid="571571028602058" type="deathFromBelow">
                                             <param id="0" name="Angle">270</param>
                                             <param id="1" name="Distance">3*60*dt</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="668850736721033">
+                                <event-block sid="794435362129481">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="702081853483708" type="System">
+                                        <condition id="-8" name="Compare two values" sid="818819407847003" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, deathFromBelow.X, deathFromBelow.Y)</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">600</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="314190373026631" type="deathFromBelow">
+                                        <action id="-23" name="Move at angle" sid="805931108128364" type="deathFromBelow">
                                             <param id="0" name="Angle">270</param>
                                             <param id="1" name="Distance">5*60*dt</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="857654799372035">
+                                <event-block sid="294032631865389">
                                     <conditions />
                                     <actions />
                                 </event-block>
                             </sub-events>
                         </event-block>
                         <comment>Death from below.</comment>
-                        <event-block sid="163524774881627">
+                        <event-block sid="704071848040932">
                             <conditions>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="438929895502389" type="deathFromBelow">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="181796901850296" type="deathFromBelow">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-23" name="Move at angle" sid="852933839109599" type="deathFromBelow">
+                                <action id="-23" name="Move at angle" sid="646360334373079" type="deathFromBelow">
                                     <param id="0" name="Angle">90</param>
                                     <param id="1" name="Distance">0</param>
                                 </action>
                             </actions>
                         </event-block>
                         <comment>Death from above.</comment>
-                        <event-block sid="155976872390993">
+                        <event-block sid="567928197245680">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="399503002640104" type="catHeadBody">
+                                <condition id="-8" name="Is boolean instance variable set" sid="868412284890154" type="catHeadBody">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="4" name="Set jump strength" sid="937129232295849" type="player">
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="536069436303851" type="player">
                                     <param id="0" name="Jump strength">50</param>
+                                </action>
+                                <action id="-23" name="Move at angle" sid="609742280114292" type="deathFromBelow">
+                                    <param id="0" name="Angle">90</param>
+                                    <param id="1" name="Distance">4*60*dt</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="515664902590378">
+                                <event-block sid="135577741934866">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="711983722226197" type="System">
+                                        <condition id="-8" name="Compare two values" sid="575792456671571" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, catHeadBody.X, catHeadBody.Y)</param>
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">400</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="866986973661935" type="catHeadBody">
+                                        <action id="-23" name="Move at angle" sid="553197261797747" type="catHeadBody">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">1.5*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="546691442838236" type="pawLeft">
+                                        <action id="-23" name="Move at angle" sid="638930037963587" type="catPawLeft">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">1.5*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="661060500208996" type="pawRight">
+                                        <action id="-23" name="Move at angle" sid="562803233727156" type="catPawRight">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">1.5*60*dt</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="131494507859929">
+                                <event-block sid="342667922119769">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="673264776930541" type="System">
+                                        <condition id="-8" name="Compare two values" sid="253048609419218" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, catHeadBody.X, catHeadBody.Y)</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">400</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" sid="676838314376499" type="System">
+                                        <condition id="-8" name="Compare two values" sid="372811033983231" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, catHeadBody.X, catHeadBody.Y)</param>
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">500</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="691188183449499" type="catHeadBody">
+                                        <action id="-23" name="Move at angle" sid="983099221851956" type="catHeadBody">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">3*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="170981990314953" type="pawLeft">
+                                        <action id="-23" name="Move at angle" sid="175036068371302" type="catPawLeft">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">3*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="796926202295071" type="pawRight">
+                                        <action id="-23" name="Move at angle" sid="276827393906367" type="catPawRight">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">3*60*dt</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="957037200403994">
+                                <event-block sid="441066433504488">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="900334558855066" type="System">
+                                        <condition id="-8" name="Compare two values" sid="472517924472508" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, catHeadBody.X, catHeadBody.Y)</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">500</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" sid="147874776962982" type="System">
+                                        <condition id="-8" name="Compare two values" sid="562296487383274" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, catHeadBody.X, catHeadBody.Y)</param>
                                             <param id="1" name="Comparison">2</param>
                                             <param id="2" name="Second value">600</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="241069456438816" type="catHeadBody">
+                                        <action id="-23" name="Move at angle" sid="320433922175423" type="catHeadBody">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">4.5*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="933477414952490" type="pawLeft">
+                                        <action id="-23" name="Move at angle" sid="776339206958670" type="catPawLeft">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">4.5*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="843303721535708" type="pawRight">
+                                        <action id="-23" name="Move at angle" sid="129548936377268" type="catPawRight">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">4.5*60*dt</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="742117621459431">
+                                <event-block sid="329168604068711">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="622229327167543" type="System">
+                                        <condition id="-8" name="Compare two values" sid="569086437627476" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, catHeadBody.X, catHeadBody.Y)</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">600</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-23" name="Move at angle" sid="215966777095428" type="catHeadBody">
+                                        <action id="-23" name="Move at angle" sid="912015704389141" type="catHeadBody">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">9.5*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="102033808285710" type="pawLeft">
+                                        <action id="-23" name="Move at angle" sid="805634963293845" type="catPawLeft">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">9.5*60*dt</param>
                                         </action>
-                                        <action id="-23" name="Move at angle" sid="910212628752873" type="pawRight">
+                                        <action id="-23" name="Move at angle" sid="836778662883131" type="catPawRight">
                                             <param id="0" name="Angle">90</param>
                                             <param id="1" name="Distance">9.5*60*dt</param>
                                         </action>
@@ -551,14 +563,14 @@
                             </sub-events>
                         </event-block>
                         <comment>Death from above.</comment>
-                        <event-block sid="921477721861557">
+                        <event-block sid="788635353863586">
                             <conditions>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="696692656403527" type="catHeadBody">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="705311877194366" type="catHeadBody">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-23" name="Move at angle" sid="105951091971812" type="catHeadBody">
+                                <action id="-23" name="Move at angle" sid="149783639652905" type="catHeadBody">
                                     <param id="0" name="Angle">90</param>
                                     <param id="1" name="Distance">0</param>
                                 </action>
@@ -566,11 +578,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="863615778020851">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <comment></comment>
+                <comment>Cat breaks platforms on the way down.</comment>
                 <event-block sid="121840842913314">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="680574891066110" type="catHeadBody">
@@ -643,10 +651,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="971367003023950">
-                    <conditions />
-                    <actions />
-                </event-block>
+                <comment></comment>
                 <event-block sid="107396061069364">
                     <conditions />
                     <actions />
@@ -671,19 +676,19 @@
                             <param id="1" name="Height">342</param>
                         </action>
                         <action id="-3" name="Create object" sid="923896049084008" type="System">
-                            <param id="0" name="Object to create">pawLeft</param>
+                            <param id="0" name="Object to create">catPawLeft</param>
                             <param id="1" name="Layer">&quot;CAT&quot;</param>
                             <param id="2" name="X">20</param>
                             <param id="3" name="Y">75</param>
                         </action>
-                        <action id="-25" name="Move to bottom" sid="496927922977595" type="pawLeft" />
+                        <action id="-25" name="Move to bottom" sid="496927922977595" type="catPawLeft" />
                         <action id="-3" name="Create object" sid="117891112816437" type="System">
-                            <param id="0" name="Object to create">pawRight</param>
+                            <param id="0" name="Object to create">catPawRight</param>
                             <param id="1" name="Layer">&quot;CAT&quot;</param>
                             <param id="2" name="X">297</param>
                             <param id="3" name="Y">75</param>
                         </action>
-                        <action id="-25" name="Move to bottom" sid="278921315356184" type="pawRight" />
+                        <action id="-25" name="Move to bottom" sid="278921315356184" type="catPawRight" />
                         <action id="0" name="Spawn another object" sid="991709145857880" type="catHeadBody">
                             <param id="0" name="Object">catEarLeft</param>
                             <param id="1" name="Layer">&quot;CAT&quot;</param>

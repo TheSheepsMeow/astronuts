@@ -2,7 +2,7 @@
 <c2project>
     <name>Astronuts</name>
     <description></description>
-    <version>0.12</version>
+    <version>0.13</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -415,16 +415,20 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648039989994068" speed="5">
                         <frame duration="1" hotspotX="0.504" hotspotY="0.501279">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.304" y="0.0971867" />
+                                <point x="0.496" y="0.00255754" />
+                                <point x="0.696" y="0.0971867" />
+                                <point x="0.904" y="0.498721" />
+                                <point x="0.936" y="0.97954" />
+                                <point x="0.496" y="1" />
+                                <point x="0.072" y="0.976982" />
+                                <point x="0.104" y="0.498721" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="pawLeft" sid="914831320487776">
+            <object-type name="catPawLeft" sid="914831320487776">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="moving" sid="819209693460228" type="boolean" />
@@ -461,7 +465,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="pawRight" sid="337721492320295">
+            <object-type name="catPawRight" sid="337721492320295">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="moving" sid="762642100290066" type="boolean" />
@@ -656,8 +660,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582077692581842" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582077692581842" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
@@ -1156,6 +1159,11 @@
                 <instance-variables>
                     <instance-variable name="id" sid="712714109458916" type="number" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Sine" sid="142550715344536">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315472787750786" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\normalAcorn.png">

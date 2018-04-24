@@ -35,7 +35,7 @@
                         <action id="0" name="Play" sid="993727587573936" type="Audio">
                             <param id="0" name="Audio file">Platform Appear1</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="790760463597002" type="System">
@@ -199,16 +199,16 @@
                             <param id="4" name="Volume">-20</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="291294888979546" type="deathFromBelow" />
+                        <action disabled="1" id="-9" name="Destroy" sid="291294888979546" type="deathFromBelow" />
                         <action id="-13" name="Set boolean" sid="882696085896025" type="catHeadBody">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="484623116188451" type="pawLeft">
+                        <action id="-13" name="Set boolean" sid="484623116188451" type="catPawLeft">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="819859875043496" type="pawRight">
+                        <action id="-13" name="Set boolean" sid="819859875043496" type="catPawRight">
                             <param id="0" name="Instance variable">moving</param>
                             <param id="1" name="Value">1</param>
                         </action>
