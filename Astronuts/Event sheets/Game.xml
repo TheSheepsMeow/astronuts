@@ -777,6 +777,9 @@
                         <action behavior="Rotate" id="0" name="Set speed" sid="191554922907238" type="playerAnimations">
                             <param id="0" name="Speed">0</param>
                         </action>
+                        <action id="6" name="Stop" sid="896207267634962" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
                         <action id="0" name="Play" sid="570063665922902" type="Audio">
                             <param id="0" name="Audio file">astro_fanfare</param>
                             <param id="2" name="Loop">0</param>
