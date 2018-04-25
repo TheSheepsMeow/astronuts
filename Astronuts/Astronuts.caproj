@@ -2,7 +2,7 @@
 <c2project>
     <name>Astronuts</name>
     <description></description>
-    <version>0.14</version>
+    <version>0.15</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -661,7 +661,9 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582077692581842" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -708,6 +710,10 @@
                 <plugin id="Particles" />
                 <texture />
             </object-type>
+            <object-type name="dustParticle" sid="794435352825468">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
         </object-folder>
         <object-folder name="collectibles">
             <object-type name="collectForPlatform" sid="562223112874291">
@@ -737,6 +743,11 @@
             </object-type>
             <object-type name="SpaceAcorn" sid="741405633649020">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="464334091801198">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985298424298743" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\normalAcorn.png">
@@ -814,6 +825,9 @@
                         <behavior id="Pin" />
                     </behavior-type>
                     <behavior-type name="Sine" sid="383256235582552">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="792921425005529">
                         <behavior id="Sin" />
                     </behavior-type>
                 </behaviors>
@@ -1166,6 +1180,9 @@
                     <behavior-type name="Sine" sid="142550715344536">
                         <behavior id="Sin" />
                     </behavior-type>
+                    <behavior-type name="Sine2" sid="292473259346293">
+                        <behavior id="Sin" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315472787750786" speed="0">
@@ -1209,7 +1226,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583166541687406" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Menu--Button1.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\New-Menu-Button.png">
                             <collision-poly>
                                 <point x="0.078125" y="0.078125" />
                                 <point x="0.921875" y="0.078125" />
@@ -1219,7 +1236,7 @@
                                 <point x="0.015625" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Menu--Button.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\New-Menu-Button1.png">
                             <collision-poly>
                                 <point x="0.078125" y="0.078125" />
                                 <point x="0.921875" y="0.078125" />
@@ -1231,7 +1248,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="192263360908094" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Downloads\Menu--Button-Pressed.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\admin\Downloads\New-Menu-Button-Pressed.png">
                             <collision-poly>
                                 <point x="0.078125" y="0.078125" />
                                 <point x="0.921875" y="0.078125" />
@@ -1510,6 +1527,30 @@
         <object-type name="MetalPlatformParticles" sid="664525017641702">
             <plugin id="Particles" />
             <texture original-source="C:\Users\Owner\Desktop\Offline Games\Spring 2018 Internship\Up Then Down\Platform Particles.png" />
+        </object-type>
+        <object-type name="A_paused" sid="895362515489200">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="605340912541622">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843617977494734" speed="5">
+                    <frame duration="1" hotspotX="0.502304" hotspotY="0.511111" original-source="C:\Users\admin\Downloads\A_paused.png">
+                        <collision-poly>
+                            <point x="0.0368664" y="0.177778" />
+                            <point x="0.497696" y="0.0444444" />
+                            <point x="0.967742" y="0.155556" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.963134" y="0.822222" />
+                            <point x="0.497696" y="0.177778" />
+                            <point x="0.0184332" y="0.911111" />
+                            <point x="0.00460829" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
