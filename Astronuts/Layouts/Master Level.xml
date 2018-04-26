@@ -1750,11 +1750,11 @@
                         <x>192</x>
                         <y>1600</y>
                         <z>0</z>
-                        <width>31.440748215</width>
-                        <height>29.007831573</height>
+                        <width>30.879306793</width>
+                        <height>28.446390152</height>
                         <depth>0</depth>
-                        <hotspotX>0.482142866</hotspotX>
-                        <hotspotY>0.948387086</hotspotY>
+                        <hotspotX>0.515151501</hotspotX>
+                        <hotspotY>0.986842096</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

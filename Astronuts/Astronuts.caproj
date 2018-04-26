@@ -493,15 +493,20 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="5">
-                        <frame duration="1" hotspotX="0.482143" hotspotY="0.948387" original-source="C:\Users\GJ Lee\Desktop\pusher.png">
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378082364458452" speed="3">
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.986842" original-source="C:\Users\GJ Lee\Desktop\Artboard-33-copyFUrnTV.png">
                             <collision-poly>
-                                <point x="1" y="0.935484" />
-                                <point x="0" y="0.935484" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.0969697" y="0.105263" />
+                                <point x="0.49697" y="0" />
+                                <point x="0.90303" y="0.105263" />
+                                <point x="0.987879" y="0.5" />
+                                <point x="0.866667" y="0.855263" />
+                                <point x="0.49697" y="0.927632" />
+                                <point x="0.121212" y="0.868421" />
+                                <point x="0.0121212" y="0.5" />
                             </collision-poly>
                         </frame>
+                        <frame duration="1" hotspotX="0.512048" hotspotY="0.986928" original-source="C:\Users\GJ Lee\Desktop\Artboard 33FUrnTV.png" />
                     </animation>
                     <animation framecount="4" loop="0" name="Bounce" pingpong="0" repeatcount="3" repeatto="0" sid="557595642048812" speed="10">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GJ Lee\Desktop\bouncy0.png" />
