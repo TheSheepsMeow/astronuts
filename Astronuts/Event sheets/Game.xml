@@ -451,6 +451,7 @@
                                 <condition id="17" name="On tap object" sid="295540997482604" type="Touch">
                                     <param id="0" name="Object">RetryButtonPressed</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="787155403350607" type="RetryButtonPressed" />
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="393624519502437" type="System">
@@ -481,6 +482,7 @@
                                 <condition id="4" name="Is touching object" sid="617300645995501" type="Touch">
                                     <param id="0" name="Object">RetryButtonPressed</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="143210699767999" type="RetryButtonPressed" />
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="463590898043736" type="RetryButtonPressed">
@@ -494,6 +496,7 @@
                                 <condition id="4" inverted="1" name="Is touching object" sid="976740335418814" type="Touch">
                                     <param id="0" name="Object">RetryButtonPressed</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="993576313723511" type="RetryButtonPressed" />
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="472097211754993" type="RetryButtonPressed">
@@ -508,6 +511,7 @@
                                 <condition id="17" name="On tap object" sid="733421774123685" type="Touch">
                                     <param id="0" name="Object">resultButtonNextLevel</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="306900277891304" type="resultButtonNextLevel" />
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="204165873420820" type="System">
@@ -540,6 +544,7 @@
                                 <condition id="4" name="Is touching object" sid="506304476291951" type="Touch">
                                     <param id="0" name="Object">resultButtonNextLevel</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="316276794506967" type="resultButtonNextLevel" />
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="338793710961005" type="resultButtonNextLevel">
@@ -553,6 +558,7 @@
                                 <condition id="4" inverted="1" name="Is touching object" sid="853238446855375" type="Touch">
                                     <param id="0" name="Object">resultButtonNextLevel</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="518148266683583" type="resultButtonNextLevel" />
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="669735709359508" type="resultButtonNextLevel">
@@ -609,6 +615,9 @@
                                     <param id="0" name="Animation">&quot;Gottem&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
+                                <action behavior="Sine2" id="0" name="Set active" sid="718170507209455" type="resultSpaceAcorn">
+                                    <param id="0" name="State">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="710248342528596">
@@ -629,6 +638,9 @@
                                     <param id="0" name="Animation">&quot;Gottem&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
+                                <action behavior="Sine2" id="0" name="Set active" sid="265484173457978" type="resultSpaceAcorn">
+                                    <param id="0" name="State">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="782171607007860">
@@ -648,6 +660,9 @@
                                 <action id="4" name="Set animation" sid="828935766149301" type="resultSpaceAcorn">
                                     <param id="0" name="Animation">&quot;Gottem&quot;</param>
                                     <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Sine2" id="0" name="Set active" sid="252047832301011" type="resultSpaceAcorn">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>

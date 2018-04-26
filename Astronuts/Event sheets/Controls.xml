@@ -149,6 +149,14 @@
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
+                                <action id="0" name="Spawn another object" sid="182629741717057" type="player">
+                                    <param id="0" name="Object">dustParticle</param>
+                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="271385372342650" type="dustParticle">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block any="1" sid="490593221254368">
@@ -160,8 +168,16 @@
                                         <action id="0" name="Play" sid="494570510432046" type="Audio">
                                             <param id="0" name="Audio file">pooping</param>
                                             <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">-10</param>
+                                            <param id="3" name="Volume">-5</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action disabled="1" id="0" name="Spawn another object" sid="368315290383500" type="player">
+                                            <param id="0" name="Object">dustParticle</param>
+                                            <param id="1" name="Layer">Self.LayerNumber</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action disabled="1" id="-8" name="Set angle" sid="104745178116191" type="dustParticle">
+                                            <param id="0" name="Angle">90</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -186,6 +202,14 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="931099213189885" type="player">
+                                    <param id="0" name="Object">dustParticle</param>
+                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="440690617647993" type="dustParticle">
+                                    <param id="0" name="Angle">90</param>
                                 </action>
                             </actions>
                         </event-block>
