@@ -2,7 +2,7 @@
 <c2project>
     <name>Astronuts</name>
     <description></description>
-    <version>0.15</version>
+    <version>0.16</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -527,9 +527,11 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791728893674967" speed="5">
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791728893674967" speed="5">
                         <frame duration="1" hotspotX="0.489011" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27 copy.png" />
                         <frame duration="1" hotspotX="0.486339" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27.png" />
+                        <frame duration="1" hotspotX="0.489011" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.486339" hotspotY="1" />
                     </animation>
                     <animation framecount="4" loop="0" name="Spikey" pingpong="0" repeatcount="1" repeatto="0" sid="319095749414454" speed="5">
                         <frame duration="1" hotspotX="0.486339" hotspotY="1" original-source="C:\Users\GJ Lee\Desktop\Artboard 27 copy 2.png" />
@@ -1715,6 +1717,18 @@
         <file name="66 Burmese, Individual Meows.ogg" />
         <file name="67 Burmese, Individual Meows.m4a" />
         <file name="67 Burmese, Individual Meows.ogg" />
+        <file name="scurry0.m4a" />
+        <file name="scurry0.ogg" />
+        <file name="scurry1.m4a" />
+        <file name="scurry1.ogg" />
+        <file name="scurry2.m4a" />
+        <file name="scurry2.ogg" />
+        <file name="scurry3.m4a" />
+        <file name="scurry3.ogg" />
+        <file name="scurry4.m4a" />
+        <file name="scurry4.ogg" />
+        <file name="astroloop.m4a" />
+        <file name="astroloop.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Title Screen Music Edited.m4a" />

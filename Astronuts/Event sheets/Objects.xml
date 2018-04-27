@@ -35,7 +35,7 @@
                         <action id="0" name="Play" sid="993727587573936" type="Audio">
                             <param id="0" name="Audio file">Platform Appear1</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-15</param>
+                            <param id="3" name="Volume">-20</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="790760463597002" type="System">

@@ -32,7 +32,7 @@
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-7" name="Set size" sid="112428908449228" type="player">
-                            <param id="0" name="Width">32</param>
+                            <param id="0" name="Width">16</param>
                             <param id="1" name="Height">32</param>
                         </action>
                     </actions>

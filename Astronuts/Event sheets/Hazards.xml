@@ -22,7 +22,13 @@
                         <action id="0" name="Play" sid="470958001244452" type="Audio">
                             <param id="0" name="Audio file">astro_ohno</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action disabled="1" id="0" name="Play" sid="289718415079681" type="Audio">
+                            <param id="0" name="Audio file">Level Failed</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="ScrollTo" id="0" name="Shake" sid="729002465620942" type="camera">
@@ -76,7 +82,7 @@
                             <param id="0" name="Layer">&quot;End&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="6" name="Stop" sid="892402666085330" type="Audio">
+                        <action disabled="1" id="6" name="Stop" sid="892402666085330" type="Audio">
                             <param id="0" name="Tag">&quot;music&quot;</param>
                         </action>
                     </actions>
@@ -228,7 +234,7 @@
                     <actions />
                 </event-block>
                 <comment>safe when square</comment>
-                <event-block sid="858539022055275">
+                <event-block disabled="1" sid="858539022055275">
                     <conditions>
                         <condition id="2" name="Is playing" sid="242985821366953" type="spikey">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -240,15 +246,29 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="123979813346228">
+                <event-block disabled="1" sid="123979813346228">
                     <conditions>
                         <condition id="2" name="Is playing" sid="642289882634144" type="spikey">
                             <param id="0" name="Animation">&quot;Spikey&quot;</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="467038965307492" type="spikey">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action behavior="Solid" id="0" name="Set enabled" sid="133418868069345" type="spikey">
                             <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="977186795697676">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="903143059412804" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="686306154351195" type="spikey">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -258,17 +278,33 @@
                         <condition id="2" name="Is playing" sid="352926450780771" type="spikey">
                             <param id="0" name="Animation">&quot;Spikey&quot;</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="309670464943448" type="player">
-                            <param id="0" name="Object">spikey</param>
+                        <condition id="3" name="Compare frame" sid="249556932780804" type="spikey">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
                         </condition>
-                        <condition id="-4" name="Trigger once while true" sid="421257170917290" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="273631793899496" type="Function">
-                            <param id="0" name="Name">&quot;losing&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="210609885876419">
+                            <conditions>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="309670464943448" type="player">
+                                    <param id="0" name="Object">spikey</param>
+                                </condition>
+                                <condition id="9" name="Is overlapping at offset" sid="372339177259287" type="player">
+                                    <param id="0" name="Object">spikey</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">1</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="421257170917290" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="273631793899496" type="Function">
+                                    <param id="0" name="Name">&quot;losing&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="481686380505050">
                     <conditions />
@@ -604,6 +640,10 @@
                         <action behavior="Physics" id="27" name="Set enabled" sid="270714598981585" type="platform">
                             <param id="0" name="Mode">1</param>
                         </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="146470340623935" type="platform">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                         <action behavior="Physics" id="5" name="Apply impulse at angle" sid="126039798830555" type="platform">
                             <param id="0" name="Impulse">1</param>
                             <param id="1" name="Angle">angle(catHeadBody.X, catHeadBody.Y, Self.X, Self.Y)</param>
@@ -634,6 +674,10 @@
                         <action behavior="Solid" id="0" name="Set enabled" sid="336848179736018" type="MetalPlatform">
                             <param id="0" name="State">0</param>
                         </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="516830114373965" type="MetalPlatform">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                         <action behavior="Physics" id="5" name="Apply impulse at angle" sid="295205669773707" type="MetalPlatform">
                             <param id="0" name="Impulse">1</param>
                             <param id="1" name="Angle">angle(catHeadBody.X, catHeadBody.Y, Self.X, Self.Y)</param>
@@ -646,7 +690,7 @@
                         <action id="0" name="Play" sid="764062620738676" type="Audio">
                             <param id="0" name="Audio file">groundpound</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-5</param>
+                            <param id="3" name="Volume">-4</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
@@ -660,6 +704,10 @@
                     <actions>
                         <action behavior="Jumpthru" id="0" name="Set enabled" sid="534445809502437" type="SpaceCloudPlatform">
                             <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="189173027774953" type="SpaceCloudPlatform">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action behavior="Physics" id="27" name="Set enabled" sid="187723932677155" type="SpaceCloudPlatform">
                             <param id="0" name="Mode">1</param>
@@ -676,7 +724,7 @@
                         <action id="0" name="Play" sid="841204925139133" type="Audio">
                             <param id="0" name="Audio file">groundpound</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-8</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>

@@ -130,88 +130,118 @@
                         <comment></comment>
                         <event-block sid="157584846016731">
                             <conditions>
-                                <condition behavior="Platform" id="5" name="On jump" sid="307253740009635" type="player" />
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="950811856382156" type="catHeadBody">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action disabled="1" id="7" name="Play (by name)" sid="754168802527581" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">&quot;Jump&quot; &amp; str(choose(1,2,3))</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">-20</param>
-                                    <param id="2" name="Tag (optional)">&quot;jump&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="704787529131363" type="Audio">
-                                    <param id="0" name="Audio file">footsteps</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="0" name="Spawn another object" sid="182629741717057" type="player">
-                                    <param id="0" name="Object">dustParticle</param>
-                                    <param id="1" name="Layer">Self.LayerNumber</param>
-                                    <param id="2" name="Image point">1</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="271385372342650" type="dustParticle">
-                                    <param id="0" name="Angle">90</param>
+                                <action behavior="Platform" id="13" name="Set double-jump" sid="742853847156431" type="player">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block any="1" sid="490593221254368">
+                                <event-block sid="703930858532374">
                                     <conditions>
-                                        <condition behavior="Platform" id="3" name="Is jumping" sid="297685684189215" type="player" />
-                                        <condition behavior="Platform" id="4" name="Is falling" sid="827850475131291" type="player" />
+                                        <condition behavior="Platform" id="5" name="On jump" sid="307253740009635" type="player" />
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="494570510432046" type="Audio">
-                                            <param id="0" name="Audio file">pooping</param>
+                                        <action disabled="1" id="7" name="Play (by name)" sid="754168802527581" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">&quot;Jump&quot; &amp; str(choose(1,2,3))</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">-20</param>
+                                            <param id="2" name="Tag (optional)">&quot;jump&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="704787529131363" type="Audio">
+                                            <param id="0" name="Audio file">footsteps</param>
                                             <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">-5</param>
+                                            <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
-                                        <action disabled="1" id="0" name="Spawn another object" sid="368315290383500" type="player">
+                                        <action disabled="1" id="7" name="Play (by name)" sid="154320288312108" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">&quot;scurry&quot; &amp; choose(0,1,2,3,4)</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">0</param>
+                                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="182629741717057" type="player">
                                             <param id="0" name="Object">dustParticle</param>
                                             <param id="1" name="Layer">Self.LayerNumber</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
-                                        <action disabled="1" id="-8" name="Set angle" sid="104745178116191" type="dustParticle">
+                                        <action id="-8" name="Set angle" sid="271385372342650" type="dustParticle">
                                             <param id="0" name="Angle">90</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block any="1" sid="490593221254368">
+                                            <conditions>
+                                                <condition behavior="Platform" id="3" name="Is jumping" sid="297685684189215" type="player" />
+                                                <condition behavior="Platform" id="4" name="Is falling" sid="827850475131291" type="player" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="494570510432046" type="Audio">
+                                                    <param id="0" name="Audio file">pooping</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">-5</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                                <action disabled="1" id="0" name="Spawn another object" sid="368315290383500" type="player">
+                                                    <param id="0" name="Object">dustParticle</param>
+                                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action disabled="1" id="-8" name="Set angle" sid="104745178116191" type="dustParticle">
+                                                    <param id="0" name="Angle">90</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment></comment>
                         <event-block sid="457486890000441">
                             <conditions>
-                                <condition behavior="Platform" id="5" name="On jump" sid="812639560716138" type="player" />
                                 <condition id="-8" name="Is boolean instance variable set" sid="325185521858129" type="catHeadBody">
                                     <param id="0" name="Instance variable">moving</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action disabled="1" id="0" name="Play" sid="853148002391062" type="Audio">
-                                    <param id="0" name="Audio file">Jump5</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-30</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="100131555455029" type="Audio">
-                                    <param id="0" name="Audio file">footsteps</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="0" name="Spawn another object" sid="931099213189885" type="player">
-                                    <param id="0" name="Object">dustParticle</param>
-                                    <param id="1" name="Layer">Self.LayerNumber</param>
-                                    <param id="2" name="Image point">1</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="440690617647993" type="dustParticle">
-                                    <param id="0" name="Angle">90</param>
+                                <action behavior="Platform" id="13" name="Set double-jump" sid="217401374318008" type="player">
+                                    <param id="0" name="State">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="403334438574648">
+                                    <conditions>
+                                        <condition behavior="Platform" id="5" name="On jump" sid="812639560716138" type="player" />
+                                    </conditions>
+                                    <actions>
+                                        <action disabled="1" id="0" name="Play" sid="853148002391062" type="Audio">
+                                            <param id="0" name="Audio file">Jump5</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-30</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="100131555455029" type="Audio">
+                                            <param id="0" name="Audio file">footsteps</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="931099213189885" type="player">
+                                            <param id="0" name="Object">dustParticle</param>
+                                            <param id="1" name="Layer">Self.LayerNumber</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="440690617647993" type="dustParticle">
+                                            <param id="0" name="Angle">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <comment></comment>
                         <event-block sid="310415724565478">
@@ -252,8 +282,18 @@
                             </sub-events>
                         </event-block>
                         <event-block sid="887492078531715">
-                            <conditions />
-                            <actions />
+                            <conditions>
+                                <condition behavior="Platform" id="9" name="On landed" sid="156408329523003" type="player" />
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Play (by name)" sid="705520372340323" type="Audio">
+                                    <param id="0" name="Folder">0</param>
+                                    <param id="1" name="Audio file name">&quot;scurry&quot; &amp; choose(0,1,2,3,4)</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">-15</param>
+                                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
