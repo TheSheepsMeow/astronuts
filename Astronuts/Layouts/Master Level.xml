@@ -1622,11 +1622,6 @@
                         <dangerous>false</dangerous>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Wrap">
-                            <properties>
-                                <wrap-to>Layout</wrap-to>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="Pin" />
                         <behavior-instance type="Sine">
                             <properties>

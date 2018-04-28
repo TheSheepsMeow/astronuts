@@ -2,7 +2,7 @@
 <c2project>
     <name>Astronuts</name>
     <description></description>
-    <version>0.17</version>
+    <version>0.18</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>https://www.thesheepsmeow.com/html5/games</author-website>
@@ -825,9 +825,6 @@
                     <instance-variable name="dangerous" sid="316551998004939" type="boolean" />
                 </instance-variables>
                 <behaviors>
-                    <behavior-type name="Wrap" sid="976392665579642">
-                        <behavior id="wrap" />
-                    </behavior-type>
                     <behavior-type name="Pin" sid="844063496266759">
                         <behavior id="Pin" />
                     </behavior-type>
