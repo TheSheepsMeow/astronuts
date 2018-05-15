@@ -574,7 +574,7 @@
                                 <condition id="-14" name="Compare variable" sid="375147439515244" type="System">
                                     <param id="0" name="Variable">levelScore</param>
                                     <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -597,7 +597,7 @@
                                 <condition id="-14" name="Compare variable" sid="593708271618105" type="System">
                                     <param id="0" name="Variable">levelScore</param>
                                     <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">2</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -620,7 +620,7 @@
                                 <condition id="-14" name="Compare variable" sid="371902077207735" type="System">
                                     <param id="0" name="Variable">levelScore</param>
                                     <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">3</param>
+                                    <param id="2" name="Value">4</param>
                                 </condition>
                             </conditions>
                             <actions>
